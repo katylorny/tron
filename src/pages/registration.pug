@@ -1,0 +1,20 @@
+extends common/layout
+
+block header
+  include common/header-small
+
+block content
+  main.main.container
+    .registration.bg-white.mx-auto.d-flex.flex-column.align-items-center.shadow.rounded.mt-3.p-3(style="max-width: 570px")
+      h2 Регистрация
+      input.input-underline.mb-4(type="email" placeholder="Ваш email")
+      h2 Придумайте пароль
+      p.font-size-12 Можно использовать буквы A-Z, a-z и цифры 0-9
+      input.input-underline(type="password" placeholder="Пароль")
+      input.input-underline.mb-5(type="password" placeholder="Повторите пароль")
+      .d-flex.position-relative
+        button.registration__back-button.text-hide.position-absolute(type="button" aria-label="Назад")
+          img(src="img/icon-back.svg")
+        button.registration__button.btn.btn-primary(type="submit") Зарегистрироваться
+
+    p.registration__subscribing.font-size-12.mx-auto.mt-5 Нажимая на кнопку Зарегистрироваться, <br> вы соглашаетесь с политикой и даёте согласие на обработку персональных данных

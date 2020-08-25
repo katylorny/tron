@@ -1,0 +1,14 @@
+extends common/layout
+
+block header
+  include common/header-small
+
+block content
+  main.main.container
+    .registration.bg-white.mx-auto.d-flex.flex-column.align-items-center.shadow.rounded.mt-3.p-3.py-5(style="max-width: 570px")
+      h2 Активируйте аккуант
+      p.text-center Мы отправили на почту {mail@mail.com} письмо с <br> подтверждением, перейдите по ссылке и окунитесь в мир ТРОНа
+      p Не получили письмо?
+      p Проверьте папку Спам
+      button.btn.btn-underline Отправить повторно
+    p.registration__subscribing.text-danger.mt-5.mx-auto.d-block на почте письмо с сылью, нажми сюда

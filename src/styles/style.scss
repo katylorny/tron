@@ -1,5 +1,15 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "utils/variables";
+
 @import "common/global";
 
 @import "common/header";
 
 @import "common/footer";
+
+@import "utils/fonts";
+
+@import "blocks/sidebar";
+
+@import "blocks/registration";

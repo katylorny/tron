@@ -1,14 +1,13 @@
 extends common/layout
 
+block header
+  include common/header-small
+
 block content
   main.main
-    h2 Title
-    include includes/index/banner
-    hr
-    p paragraph
-    img(src="img/forest.jpg")
-    ul.items
-      li.items__t
-      li.items__t
-      li.items1__t
-    //- и другие блоки
+    .container.text-center
+      a.d-block(href="main.html") Главная
+      a.d-block(href="registration.html") Регистрация
+      a.d-block(href="mail-confirmation.html") Подтверждение почты
+      a.d-block(href="name.html") Имя + фамилия
+      a.d-block(href="beginning.html") Начало сценария

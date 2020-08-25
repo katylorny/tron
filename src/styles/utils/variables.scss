@@ -1,5 +1,14 @@
-// Mobile first
-$mediaWidthMobile: 320px;
-$mediaWidthTablet: 768px;
-$mediaWidthTabletHorizontal: 1024px;
-$mediaWidthLaptop: 1366px;
+$mobile-width: 320px;
+$tablet-width: 767px;
+$desktop-width: 1023px;
+$desktop-wrapper: 1200px;
+
+$helvetica-neue-medium: "Helvetica Neue Medium", "Arial", sans-serif;
+$helvetica-neue-regular: "Helvetica Neue Regular", "Arial", sans-serif;
+
+$btn-blue: #053694;
+$red: #F5272F;
+$dark-grey: #363636;
+$light-grey: #7E7E7E;
+$grey-text: #474747;
+$white-opacity: #FBFBFB;

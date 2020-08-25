@@ -1,0 +1,14 @@
+extends common/layout
+
+block header
+  include common/header-small
+
+block content
+  main.main.container
+    .registration.bg-white.mx-auto.d-flex.flex-column.align-items-center.shadow.rounded.mt-3.p-3.py-5(style="max-width: 570px")
+      h2 Аккаунт активирован!
+      p Как вас зовут?
+      input.input-underline(type="text" placeholder="Имя")
+      input.input-underline(type="text" placeholder="Фамилия")
+      input.input-underline.mb-5(type="text" placeholder="Город")
+      button.registration__button.btn.btn-primary(type="submit") Сохранить

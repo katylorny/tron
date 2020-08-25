@@ -1,2 +1,15 @@
-header
-  p Header
+header.container
+  .navbar.flex.flex-row
+    a(href="#")
+      img(src="img/logo.svg" alt="logo")
+    ul.navbar-nav.d-flex.flex-row.align-items-center.w-75.ml-auto
+      li.nav-item
+        input.input-search.form-control.form-control-plaintext.w-30.rounded-0(type="search" placeholder="Поиск" aria-label="Поиск")
+      li.nav-item.ml-auto.mr-4
+        a.d-block.text-hide(href="#" style="background-image: url('img/icon-message.svg'); width: 24px; height: 18px") Сообщения
+      li.nav-item.mr-4
+        a.d-block.text-hide(href="#" style="background-image: url('img/icon-notification.svg'); width: 19px; height: 24px") Уведомления
+      li.nav-item.ml-8
+        a.d-block.rounded-circle.overflow-hidden(href="" style="width: 56px; height: 56px")
+          img(src="img/putin.jpg" style="width: 100%; height: 100%; object-fit: cover;")
+

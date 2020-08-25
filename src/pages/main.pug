@@ -1,0 +1,177 @@
+extends common/layout
+
+block header
+  include common/header
+
+block content
+  main.main.container.pt-5
+    .row.ml-0.px-3.justify-content-between
+      .sidebar
+        .sidebar__sections.bg-white.rounded-lg.shadow-sm
+          .list-group
+            h2.list-group-item.mb-0.border-bottom.border-top-0.border-left-0.border-right-0 Разделы
+            ul.list-group-item.nav.flex-column.border-0
+              li.mb-2
+                a.text-info(href="#") Финансы
+                  span.sidebar__value 223
+              li.mb-2
+                a.text-info(href="#") ПОЛО
+                  span.sidebar__value 223
+              li.mb-2
+                a.text-info(href="#") ТРОН
+                  span.sidebar__value 223
+              li.mb-2
+                a.text-info(href="#") Инвестиции
+                  span.sidebar__value 223
+              li.mb-2
+                a.text-info(href="#") Мои темы
+                  span.sidebar__value 1
+              li.pt-4
+                a.btn-underline(href="#") Все темы
+        .sidebar__info.bg-white.rounded-lg.shadow-sm.nav.flex-column.px-3.mt-4.pt-2
+          a.text-info.mb-2(href="") Помощь
+          a.text-info.mb-2(href="") Документы
+          ul.nav.mb-3
+            li
+              a.sidebar__social.sidebar__social--ok.text-hide(href="#")
+                img(src="img/icon-ok.svg" width="12" height="19")
+            li
+              a.sidebar__social.sidebar__social--youtube.text-hide(href="#")
+                img(src="img/icon-youtube.svg" width="28" height="19")
+            li
+              a.sidebar__social.sidebar__social--vk.text-hide(href="#")
+                img(src="img/icon-vk.svg" width="35" height="19")
+          span 18+
+
+        .sidebar__subscription.bg-white.rounded-lg.shadow-sm.nav.flex-column.px-3.mt-4.pt-2
+          p.text-danger Подписка заканчивается через 8 дней
+          a.btn-underline.d-block Продлить
+
+      .content.w-75
+        ul.nav.nav-tabs.w-50.ml-auto.mr-3.mb-4
+          li.nav-item
+            a.nav-link.active.px-0(href="#") Популярное
+          li.nav-item
+            a.nav-link(href="#") Новые
+          li.nav-item.ml-auto.px-0
+            a.nav-link.px-0(href="#") Слежу
+
+
+        .content__chats
+          a.content__chat.d-flex.py-2.pl-4.pr-3.rounded-lg.shadow-sm.mb-4(href="#")
+            .content__avatar.rounded-circle.d-block.font-size-14ck.overflow-hidden
+              img(src="img/putin.jpg" alt="Аватарка пользователя")
+            .d-block.ml-2
+              h2.text-info UX дизайн форума ТРОН
+              .row.ml-0
+                .d-flex
+                  p.mr-2.font-size-12(style="margin-top: 2px") Автор
+                  .d-block.mr-4.font-size-14
+                    p.mb-0 Константин Двугрошев
+                    p.mb-0 13.03.2020 15:10
+                .d-flex
+                  p.mr-2.font-size-12(style="margin-top: 2px") Последнее
+                  .d-block.mr-2.font-size-14
+                    p.mb-0 Константин Двугрошев
+                    p.mb-0 13.03.2020 15:10
+            .d-flex.flex-column.ml-auto
+              table.content__table.table.table-borderless
+                tr
+                  td
+                    span.d-block.font-size-20.font-weight-bold 3434
+                  td
+                    span.d-block.font-size-12 Сообщений
+                tr
+                  td.content__table-left
+                    span.mr1.font-size-20.text-danger.font-weight-bolder +1
+                  td.content__table__right
+                    span.text-danger.font-size-12 Новое
+              button.btn.btn-underline.mt-auto.ml-auto Следить
+
+          a.content__chat.d-flex.py-2.pl-4.pr-3.rounded-lg.shadow-sm.mb-4(href="#")
+            .content__avatar.rounded-circle.d-block.font-size-14ck.overflow-hidden
+              img(src="img/putin.jpg" alt="Аватарка пользователя")
+            .d-block.ml-2
+              h2.text-info Пропаганда идей Универсализма А.В. Кашанского А.П. Девятова. Организация и проведение Презентаций!
+              .row.ml-0
+                .d-flex
+                  p.mr-2.font-size-12(style="margin-top: 2px") Автор
+                  .d-block.mr-4.font-size-14
+                    p.mb-0 Константин Двугрошев
+                    p.mb-0 13.03.2020 15:10
+                .d-flex
+                  p.mr-2.font-size-12(style="margin-top: 2px") Последнее
+                  .d-block.mr-2.font-size-14
+                    p.mb-0 Константин Двугрошев
+                    p.mb-0 13.03.2020 15:10
+            .d-flex.flex-column.ml-auto
+              table.content__table.table.table-borderless
+                tr
+                  td
+                    span.d-block.font-size-20.font-weight-bold 3434
+                  td
+                    span.d-block.font-size-12 Сообщений
+                tr
+                  td.content__table-left
+                    span.mr1.font-size-20.text-danger.font-weight-bolder +1
+                  td.content__table__right
+                    span.text-danger.font-size-12 Новое
+              button.btn.btn-underline.mt-auto.ml-auto Перестать следить
+
+          a.content__chat.d-flex.py-2.pl-4.pr-3.rounded-lg.shadow-sm.mb-4(href="#")
+            .content__avatar.rounded-circle.d-block.font-size-14ck.overflow-hidden
+              img(src="img/putin.jpg" alt="Аватарка пользователя")
+            .d-block.ml-2
+              h2.text-info Проект «Книга ВЕЖДИЗМ»
+              .row.ml-0
+                .d-flex
+                  p.mr-2.font-size-12(style="margin-top: 2px") Автор
+                  .d-block.mr-4.font-size-14
+                    p.mb-0 Константин Двугрошев
+                    p.mb-0 13.03.2020 15:10
+                .d-flex
+                  p.mr-2.font-size-12(style="margin-top: 2px") Последнее
+                  .d-block.mr-2.font-size-14
+                    p.mb-0 Константин Двугрошев
+                    p.mb-0 13.03.2020 15:10
+            .d-flex.flex-column.ml-auto
+              table.content__table.table.table-borderless
+                tr
+                  td
+                    span.d-block.font-size-20.font-weight-bold 1000
+                  td
+                    span.d-block.font-size-12 Сообщений
+                tr
+                  td.content__table-left
+                    span.mr1.font-size-20.text-danger.font-weight-bolder +7
+                  td.content__table__right
+                    span.text-danger.font-size-12 Новых
+
+          a.content__chat.d-flex.py-2.pl-4.pr-3.rounded-lg.shadow-sm.mb-4(href="#")
+            .content__avatar.rounded-circle.d-block.font-size-14ck.overflow-hidden
+              img(src="img/putin.jpg" alt="Аватарка пользователя")
+            .d-block.ml-2
+              h2.text-info Платформа онлайн образования "Школы Здравого Смысла"
+              .row.ml-0
+                .d-flex
+                  p.mr-2.font-size-12(style="margin-top: 2px") Автор
+                  .d-block.mr-4.font-size-14
+                    p.mb-0 Константин Двугрошев
+                    p.mb-0 13.03.2020 15:10
+                .d-flex
+                  p.mr-2.font-size-12(style="margin-top: 2px") Последнее
+                  .d-block.mr-2.font-size-14
+                    p.mb-0 Константин Двугрошев
+                    p.mb-0 13.03.2020 15:10
+            .d-flex.flex-column.ml-auto
+              table.content__table.table.table-borderless
+                tr
+                  td
+                    span.d-block.font-size-20.font-weight-bold 3434
+                  td
+                    span.d-block.font-size-12 Сообщений
+                tr
+                  td.content__table-left
+                    span.mr1.font-size-20.text-danger.font-weight-bolder +1
+                  td.content__table__right
+                    span.text-danger.font-size-12 Новое

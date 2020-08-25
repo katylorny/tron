@@ -1,0 +1,30 @@
+.sidebar {
+  width: 22%;
+}
+
+.sidebar__social {
+  margin-right: 15px;
+}
+
+.sidebar__social--ok {
+  background-image: url("../img/icon-ok.svg");
+  width: 12px;
+  height: 19px;
+}
+
+.sidebar__social--youtube {
+  background-image: url("../img/icon-youtube.svg");
+  width: 28px;
+  height: 19px;
+}
+
+.sidebar__social--vk {
+  background-image: url("../img/icon-vk.svg");
+  width: 35px;
+  height: 19px;
+}
+
+.sidebar__value {
+  color: $light-grey;
+  margin-left: 5px;
+}
