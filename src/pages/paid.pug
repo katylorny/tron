@@ -1,0 +1,14 @@
+extends common/layout
+
+block header
+  include common/header-small
+
+block content
+  main.main.container
+    .paid.white-window.align-items-center.mt-3.mb-4
+      .status-icon.status-icon--true.mb-3
+      h2.mb-2 Оплачено!
+      p.mb-0 Оплата успешно произведена.
+      p Через 10 секунд откроется страница форума
+      a.btn.btn-primary(href="#") Открыть форум
+

@@ -1,4 +1,4 @@
-header.container
+header.header.container
   .navbar.flex.flex-row
     a(href="#")
       img(src="img/logo.svg" alt="logo")
@@ -6,10 +6,9 @@ header.container
       li.nav-item
         input.input-search.form-control.form-control-plaintext.w-30.rounded-0(type="search" placeholder="Поиск" aria-label="Поиск")
       li.nav-item.ml-auto.mr-4
-        a.d-block.text-hide(href="#" style="background-image: url('img/icon-message.svg'); width: 24px; height: 18px") Сообщения
+        a.header__icon.header__icon--messages.d-block.text-hide(href="#") Сообщения
       li.nav-item.mr-4
-        a.d-block.text-hide(href="#" style="background-image: url('img/icon-notification.svg'); width: 19px; height: 24px") Уведомления
+        a.header__icon.header__icon--notifications.d-block.text-hide(href="#") Уведомления
       li.nav-item.ml-8
-        a.d-block.rounded-circle.overflow-hidden(href="" style="width: 56px; height: 56px")
-          img(src="img/putin.jpg" style="width: 100%; height: 100%; object-fit: cover;")
-
+        a.header__user.d-block.rounded-circle.overflow-hidden(href="")
+          img(src="img/userpic.jpg")
