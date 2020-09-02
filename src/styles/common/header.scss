@@ -15,6 +15,10 @@
     background-image: url("../img/icon-notification.svg");
     width: 19px;
     height: 24px;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .header__user {
