@@ -1,6 +1,49 @@
+.chats__list {
+  padding: 0;
+}
+
 .chats__link {
   width: 55px;
   height: 55px;
   flex-shrink: 0;
   margin-right: 10px;
+}
+
+.chats__item {
+  padding: 11px 5px 11px 24px;
+  position: relative;
+}
+
+.chats__online {
+  width: 9px;
+  height: 9px;
+  background: #FF0000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+  border-radius: 50%;
+}
+
+.chats__item.active {
+  box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+}
+
+.chats__search {
+  position: relative;
+
+  input {
+    padding: 15px 30px 17px 52px;
+    height: 52px;
+    background-position-x: 10%;
+    background-position-y: 43%;
+  }
+}
+
+.chats__add {
+  position: absolute;
+  top: 15px;
+  right: 7px;
+  border: none;
+  background: transparent;
 }

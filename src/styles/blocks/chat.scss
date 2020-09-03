@@ -1,0 +1,105 @@
+.chat {
+  position: relative;
+  box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+}
+
+.chat__input {
+  position: relative;
+  textarea {
+    width: 100%;
+    resize: none;
+    height: 87px;
+    border: none;
+    padding: 20px 89px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: $helvetica-neue;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #7E7E7E;
+    }
+  }
+}
+
+.chat__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 24px;
+  align-items: center;
+  background: white;
+  z-index: 2;
+
+  h2 {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.chat__messages {
+  border-bottom: 2px solid rgba(71, 71, 71, 0.1);
+  //height: 100%;
+  overflow-y: auto;
+  height: calc(100vh - 135px - 94px);
+}
+
+.chat__message {
+  padding-left: 89px;
+  padding-right: 20px;
+  position: relative;
+  padding-bottom: 20px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.chat__message--new {
+  background: #FEF4F5;
+}
+
+.chat__date {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7E7E7E;
+  margin-bottom: 20px;
+}
+
+.chat__author {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #053694;
+  margin-bottom: 16px;
+}
+
+.chat__author-pic {
+  position: absolute;
+  top: 0;
+  left: 23px;
+}
+
+.chat__add-file-button {
+  width: 17px;
+  height: 17px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 18px;
+  left: 40px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.chat__send-button {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}

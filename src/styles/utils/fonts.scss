@@ -1,15 +1,35 @@
+//@font-face {
+//    font-family: "Helvetica Neue Regular";
+//    font-style: normal;
+//    //font-weight: 900;
+//    src: url("../fonts/helvetica-neue-regular.woff2") format("woff2"), url("../fonts/helvetica-neue-regular.woff") format("woff");
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: "Helvetica Neue Medium";
+//    font-style: normal;
+//    //font-weight: 900;
+//    src: url("../fonts/helvetica-neue-medium.woff2") format("woff2"), url("../fonts/helvetica-neue-medium.woff") format("woff");
+//    font-display: swap;
+//}
+
+//regular
+
 @font-face {
-    font-family: "Helvetica Neue Regular";
+    font-family: "Helvetica Neue";
     font-style: normal;
-    //font-weight: 900;
+    font-weight: normal;
     src: url("../fonts/helvetica-neue-regular.woff2") format("woff2"), url("../fonts/helvetica-neue-regular.woff") format("woff");
     font-display: swap;
 }
 
+// medium
+
 @font-face {
-    font-family: "Helvetica Neue Medium";
+    font-family: "Helvetica Neue";
     font-style: normal;
-    //font-weight: 900;
+    font-weight: 500;
     src: url("../fonts/helvetica-neue-medium.woff2") format("woff2"), url("../fonts/helvetica-neue-medium.woff") format("woff");
     font-display: swap;
 }

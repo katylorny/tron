@@ -13,7 +13,7 @@ $(document).ready(() => {
 
 $(`#modalNotifications`).modal({
     backdrop: false,
-    // show: false
+    show: false
 })
 
 // $(`#modalNotifications`).on(`shown.bs.modal`, function () {
