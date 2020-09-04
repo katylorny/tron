@@ -1,0 +1,66 @@
+extends common/layout
+
+block header
+  include common/header
+
+block content
+  main.main.container.pt-5
+    .row.ml-0.px-3.justify-content-between
+      .sidebar.left-column
+        .sidebar__sections.bg-white.rounded-lg.shadow-sm
+          .list-group.chats
+            .chats__search.list-group-item.rounded-0.mb-0.border-top-0.border-left-0.border-right-0.p-0
+              input.input-search.form-control.form-control-plaintext.border-0(type="text" placeholder="Поиск людей")
+              button.chats__add(type="button")
+                img(src="img/icon-plus.svg" width="15" height="15")
+            ul.chats__list.list-group-item.nav.flex-column.border-0
+              li.chats__item.d-flex.align-items-center.active
+                .chats__online
+                a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+                  img(src="img/userpic.jpg")
+                p.font-size-14.mb-0 UX Дизайн
+
+              li.chats__item.d-flex.align-items-center
+                .chats__online
+                a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+                  img(src="img/userpic.jpg")
+                p.font-size-14.mb-0 Артур Коломыцын
+
+              li.chats__item.d-flex.align-items-center
+                a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+                  img(src="img/userpic.jpg")
+                p.font-size-14.mb-0 Василий Пупкин
+
+
+      .content.right-column.chat.bg-white.d-flex.flex-column
+        a.chat__back-button.d-flex.align-items-center(href="#")
+          img(src="img/icon-back.svg")
+          span.text-info Вернуться к беседе
+        .chat__chat-name.d-flex.align-items-center
+          a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+            img(src="img/userpic.jpg")
+          p.font-size-14.mb-0 UX Дизайн
+        ul.chat__participants.nav.nav-tabs.border-0.align-items-end
+          li.nav-item
+            a.nav-link.active.px-0(href='#') Все участники
+          li.nav-item
+            a.nav-link(href='#') Администраторы
+        a.chat__add-new.d-flex.align-items-center(href="#")
+          img(src="img/icon-plus.svg" width="15" height="15")
+          span.text-info Добавить новых участников
+        .chat__participant.d-flex.align-items-center
+          a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+            img(src="img/userpic.jpg")
+          p.font-size-14.mb-0 Артур Коломыцын
+            span.chat__admin Админ
+        .chat__participant.d-flex.align-items-center
+          a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+            img(src="img/userpic.jpg")
+          p.font-size-14.mb-0 Артур Коломыцын
+            a.text-info.ml-auto(href="#") Удалить
+        .chat__participant.d-flex.align-items-center
+          a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+            img(src="img/userpic.jpg")
+          p.font-size-14.mb-0 Артур Коломыцын
+            a.text-info.ml-auto(href="#") Удалить
+

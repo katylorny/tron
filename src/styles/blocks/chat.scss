@@ -103,3 +103,49 @@
   bottom: 0;
   right: 10px;
 }
+
+.chat__back-button {
+  padding: 19px 24px;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.chat__chat-name {
+  padding: 10px 24px;
+}
+
+.chat__participants {
+  padding-left: 24px;
+}
+
+.chat__add-new {
+  padding: 19px 24px;
+
+  p {
+    line-height: 18px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.chat__participant {
+  padding: 11px 24px;
+
+  p {
+    line-height: 17px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.chat__admin {
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7E7E7E;
+}
