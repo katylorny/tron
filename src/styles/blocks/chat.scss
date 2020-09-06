@@ -5,6 +5,7 @@
 
 .chat__input {
   position: relative;
+
   textarea {
     width: 100%;
     resize: none;
@@ -148,4 +149,8 @@
   font-size: 14px;
   line-height: 17px;
   color: #7E7E7E;
+}
+
+.chat__add-new-chat {
+  margin-top: 169px;
 }

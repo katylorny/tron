@@ -47,3 +47,62 @@
   border: none;
   background: transparent;
 }
+
+.chats__new-chat {
+  padding: 15px 24px 17px;
+}
+
+.chats__close-button {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.chats__adding-user {
+  background: #D2D2D2;
+  border-radius: 2px;
+  display: block;
+  padding: 3px 16px 3px 5px;
+  margin-bottom: 5px;
+  position: relative;
+  margin-right: 5px;
+
+  button {
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+
+.chats__input-name {
+  height: 30px;
+  max-width: 87px;
+  order: 2;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.chats__chat-title {
+  &:focus {
+    outline: none;
+  }
+}
+
+.chats__item.selected {
+  border: 1px solid #528DFF;
+  border-radius: 5px;
+}
+
+.list-group-item+.list-group-item {
+  border-top-width: initial;
+}
+
+.chats__create-chat-button {
+  border-top-width: 2px;
+  border: none;
+  border-top: 2px solid #ececec;
+}
