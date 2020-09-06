@@ -62,7 +62,8 @@ block content
             p Привет, мне понравилась анимация на блоках,—бегущий контур
             p Цветовая схема
         .chat__input
-          button.chat__add-file-button(type="button")
+          input#add-file.sr-only(type="file" multiple)
+          label.chat__add-file-button(for="add-file")
             img(src="img/icon-add-file.svg" width="15" height="17")
           textarea(placeholder="Введите сообщение")
           button.chat__send-button.btn.btn-underline Отправить

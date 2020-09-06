@@ -1,0 +1,84 @@
+extends common/layout
+
+block header
+  include common/header
+
+block content
+  main.main.container.pt-5
+    .row.ml-0.px-3.justify-content-between
+      .sidebar.left-column
+        a.d-flex.text-info.align-items-center(href="#")
+          img(src="img/icon-back.svg" width="30" height="5")
+          span.ml-2 вернуться к списку
+
+      .content.thread.right-column.d-flex.flex-column
+        .thread__main.bg-white
+          a.thread__author-pic.d-block.rounded-circle.overflow-hidden(href="#")
+            img(src="img/userpic.jpg")
+          .d-flex.align-items-center.mb-4
+            h2.m-0 UX дизайн ПОЛО
+            button.btn.p-0.ml-2(type="button")
+              img(src="img/icon-edit.svg" width="14" height="14")
+            button.btn.p-0.ml-2(type="button")
+              img(src="img/icon-close.svg" width="12" height="12")
+            button.btn.text-info.p-0.ml-2 Пожаловаться
+            p.ml-auto.mb-0
+              span.font-size-20 2
+              span.ml-1 сообщения
+          .thread__author.d-flex.mb-45
+            span.font-size-12 Автор
+            .d-flex.flex-column.ml-10
+              span.font-size-14 13.03.2020 15:10
+              span.font-size-14 Константин Двугрошев
+          p.thread__text Тут может быть текстовое описание треда. Пользователь самостоятельно пишет текст, который будет обязательно виден при первом открытие темы, но с возможностью свернуть его. При повторных открытиях текст будет свернут, но с возможностью открыть его  Так же можно приаттачить файлы Ширина текстового контейнера 600 пикслей
+          .d-flex
+            input.sr-only(type="file" id="add-file" multiple)
+            label.thread__add-file(for="add-file")
+              img(src="img/icon-add-file.svg" width="15" height="17")
+            .d-flex.flex-column
+              a.text-info(href="#") Счет на оплату.doc
+              a.text-info(href="#") Макет.pdf
+              a.text-info(href="#") Файл с безумно длинным названием, котр...
+          button.thread__follow.btn.text-info.btn-underline(type="button") Следить
+        .thread__write-comment
+          textarea(placeholder="написать комментарий")
+          button.thread__send-comment.btn.btn-underline Отправить
+
+        .thread__comments
+          ul.thread__sort.nav.nav-tabs.align-items-end.mb-4
+            li.nav-item
+              a.nav-link.active.px-0(href='#') Популярное
+            li.nav-item
+              a.nav-link(href='#') По порядку
+          ul.list-unstyled
+            li
+              .thread__comment.d-flex.flex-column.bg-white
+                a.thread__author-pic.d-block.rounded-circle.overflow-hidden(href="#")
+                  img(src="img/userpic.jpg")
+                .d-flex.align-items-center.mb-10
+                  h2.m-0 Вадим Паясу
+                  button.btn.p-0.ml-auto.d-flex.text-info(type="button")
+                    span Пожаловаться
+                    img(src="img/icon-close.svg")
+                span.thead__changed.mb-4 Изменено 17.03.2020 16.59
+                p.mb-4 Костян, почти все, нужны бабки
+                button.btn.btn-underline Ответить
+              ul.thread__comments-list-sub.list-unstyled
+                li
+                  .thread__comment.d-flex.flex-column
+                    a.thread__author-pic.d-block.rounded-circle.overflow-hidden(href="#")
+                      img(src="img/userpic.jpg")
+                    .d-flex.align-items-center.mb-10
+                      h2.m-0 Константин Двугрошев
+                      span.thread__author.mb-0.ml-2 Автор
+                      button.btn.p-0.ml-2(type="button")
+                        img(src="img/icon-edit.svg" width="14" height="14")
+                    span.thead__changed.mb-4 Изменено 17.03.2020 16.59
+                    p.mb-4 <a href="#" class="text-info"> Вадим </a>, денег не будет
+                    button.btn.btn-underline Ответить
+          .thread__write-comment
+            textarea(placeholder="написать комментарий")
+            button.thread__send-comment.btn.btn-underline Отправить
+        a.thread__scroll-top.d-block(href="#")
+          img(src="img/icon-top-scroll.svg" width="100" height="100")
+
