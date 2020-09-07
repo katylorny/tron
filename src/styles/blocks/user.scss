@@ -1,0 +1,19 @@
+.user {
+    padding: 20px;
+
+    .modal-content {
+        box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+    }
+}
+
+.user__close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+}
+
+.user__user-pic {
+    width: 100px;
+    height: 100px;
+}

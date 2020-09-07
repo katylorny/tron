@@ -3,34 +3,34 @@
 //}
 
 .notifications {
-  .modal-dialog {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 435px;
-    margin: 0;
-    height: calc(100vh - 70px);
-  }
+    .modal-dialog {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 435px;
+        margin: 0;
+        height: calc(100vh - 70px);
+    }
 
-  .modal-body {
-    padding: 0;
-  }
+    .modal-body {
+        padding: 0;
+    }
 }
 
 .notifications__item--new {
-  background: #FEF4F5;
+    background: #fef4f5;
 }
 
 .notifications__date {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #474747;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #474747;
 }
 
 .notifications__close-button {
-  &:focus {
-    outline: none;
-  }
+    &:focus {
+        outline: none;
+    }
 }
