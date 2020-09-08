@@ -1,9 +1,29 @@
 @import "../mixins/media";
-//
-//header {
-//    width: 220px;
-//    background-color: red;
-//}
+
+.header {
+    .left-column {
+      margin-right: 3%;
+    }
+}
+
+.header__nav {
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
+}
+
+.header__search-input {
+  width: 30%;
+
+  @media (max-width: $desktop-width) {
+    width: 50%;
+  }
+
+  @media (max-width: $tablet-width) {
+    order: 2;
+    width: 100%;
+  }
+}
 
 .header__icon--messages {
     background-image: url("../img/icon-message.svg");

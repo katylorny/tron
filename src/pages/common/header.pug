@@ -1,10 +1,11 @@
 header.header.container
   .navbar.flex.flex-row
-    a(href="#").left-column
-      img(src="img/logo.svg" alt="logo")
-    ul.navbar-nav.d-flex.flex-row.align-items-center.ml-auto.right-column
-      li.nav-item
-        input.input-search.form-control.form-control-plaintext.w-30.rounded-0(type="search" placeholder="Поиск" aria-label="Поиск")
+    ul.header__nav.navbar-nav.d-flex.flex-row.align-items-center.w-100
+      li.nav-item.left-column
+        a(href="#")
+          img(src="img/logo.svg" alt="logo")
+      li.nav-item.header__search-input
+        input.input-search.form-control.form-control-plaintext.rounded-0(type="search" placeholder="Поиск" aria-label="Поиск")
       li.nav-item.ml-auto.mr-4
         a.header__icon.header__icon--messages.d-block.text-hide(href="#") Сообщения
       li.nav-item.mr-4

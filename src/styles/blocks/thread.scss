@@ -97,6 +97,10 @@
     border-left: 1px dashed grey;
     padding-left: 64px;
 
+    @media (max-width: $desktop-width) {
+      padding-left: 6px;
+    }
+
     .thread__comment {
         background: #f9efef;
     }

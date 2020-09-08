@@ -5,7 +5,7 @@ block header
 
 block content
   main.main.container.pt-5
-    .row.ml-0.px-3.justify-content-between
+    .main__wrapper.d-flex.ml-0.px-3.justify-content-between
       .sidebar.left-column
         a.d-flex.text-info.align-items-center(href="#")
           img(src="img/icon-back.svg" width="30" height="5")
@@ -17,11 +17,13 @@ block content
             img(src="img/userpic.jpg")
           .d-flex.align-items-center.mb-4
             h2.m-0 UX дизайн ПОЛО
-            button.btn.p-0.ml-2(type="button")
+            button.btn.p-0.ml-2.d-none.d-lg-block(type="button")
               img(src="img/icon-edit.svg" width="14" height="14")
-            button.btn.p-0.ml-2(type="button")
+            button.btn.p-0.ml-auto.text-info.d-none.d-lg-flex(type="button")
+              span Пожаловаться
               img(src="img/icon-close.svg" width="12" height="12")
-            button.btn.text-info.p-0.ml-2 Пожаловаться
+            button.btn.d-lg-none(type="button")
+              img(src="img/icon-options.svg" width="19" height="4")
             p.ml-auto.mb-0
               span.font-size-20 2
               span.ml-1 сообщения
@@ -57,9 +59,11 @@ block content
                   img(src="img/userpic.jpg")
                 .d-flex.align-items-center.mb-10
                   h2.m-0 Вадим Паясу
-                  button.btn.p-0.ml-auto.d-flex.text-info(type="button")
+                  button.btn.p-0.ml-auto.text-info.d-none.d-lg-flex(type="button")
                     span Пожаловаться
                     img(src="img/icon-close.svg")
+                  button.btn.d-lg-none.ml-auto(type="button")
+                    img(src="img/icon-options.svg" width="19" height="4")
                 span.thead__changed.mb-4 Изменено 17.03.2020 16.59
                 p.mb-4 Костян, почти все, нужны бабки
                 button.btn.btn-underline Ответить
@@ -71,15 +75,17 @@ block content
                     .d-flex.align-items-center.mb-10
                       h2.m-0 Константин Двугрошев
                       span.thread__author.mb-0.ml-2 Автор
-                      button.btn.p-0.ml-2(type="button")
+                      button.btn.p-0.ml-2.d-none.d-lg-block(type="button")
                         img(src="img/icon-edit.svg" width="14" height="14")
+                      button.btn.d-lg-none.ml-auto(type="button")
+                        img(src="img/icon-options.svg" width="19" height="4")
                     span.thead__changed.mb-4 Изменено 17.03.2020 16.59
-                    p.mb-4 <a href="#" class="text-info"> Вадим </a>, денег не будет
+                    p.mb-4 <a href="#" class="text-info"> Вадим</a>, денег не будет
                     button.btn.btn-underline Ответить
           .thread__write-comment
             textarea(placeholder="написать комментарий")
             button.thread__send-comment.btn.btn-underline Отправить
-        a.thread__scroll-top.d-block(href="#")
+        a.thread__scroll-top.d-none.d-lg-block(href="#")
           img(src="img/icon-top-scroll.svg" width="100" height="100")
 
   #modalUser.modal.user.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")

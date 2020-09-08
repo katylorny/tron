@@ -1,19 +1,32 @@
 .user {
-    padding: 20px;
+padding: 0;
 
-    .modal-content {
-        box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+  @media(max-width: $tablet-width) {
+    top: 20vh;
+  }
+
+  .modal-content {
+    box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+    padding: 20px;
+  }
+
+  .modal-dialog {
+
+    @media(max-width: $tablet-width) {
+      margin: 0;
+      width: 100vw;
     }
+  }
 }
 
 .user__close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
 }
 
 .user__user-pic {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
