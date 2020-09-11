@@ -3,11 +3,19 @@
     position: relative;
     margin-bottom: 38px;
     box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+
+  @media (max-width: $tablet-width) {
+    padding: 10px 22px;
+  }
 }
 
 .thread__author {
     color: #474747;
     font-weight: normal;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .thread__author-pic {

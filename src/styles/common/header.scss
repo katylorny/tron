@@ -2,7 +2,7 @@
 
 .header {
     .left-column {
-      margin-right: 3%;
+      //margin-right: 3%;
     }
 }
 
@@ -16,12 +16,15 @@
   width: 30%;
 
   @media (max-width: $desktop-width) {
-    width: 50%;
+    width: 43%;
+    margin-right: 52px;
   }
 
   @media (max-width: $tablet-width) {
     order: 2;
     width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
   }
 }
 
@@ -50,4 +53,10 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+.header__notification {
+  @media (max-width: $desktop-width) {
+    margin-right: 40px;
+  }
 }
