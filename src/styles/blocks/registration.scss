@@ -1,8 +1,14 @@
 .registration {
   margin-top: 43px;
+  padding-bottom: 0;
+  margin-bottom: 33px;
 
   .input-underline {
     width: 275px;
+  }
+
+  @media(max-width: $desktop-width) {
+    margin-top: 114px;
   }
 }
 
@@ -11,20 +17,50 @@
   top: 15px;
 }
 
-.registration__button {
-  width: 275px;
-}
-
-
 .registration__fields {
-  padding-right: 79px;
   margin-top: 38px;
-
-  label {
-    width: 60px;
-  }
+  max-width: 413px;
+  width: 100%;
 }
 
 .field.registration__field--field {
-  margin-top: 17px;
+  margin-top: 11px;
+}
+
+.registration__or {
+  margin-bottom: 7px;
+}
+
+.registration__sing-up {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.registration__danger {
+  font-size: 16px;
+  line-height: 1;
+
+  @media(max-width: $tablet-width) {
+    margin-bottom: 39px !important;
+  }
+}
+
+.registration__forget {
+  font-weight: 500;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.footer__link {
+  margin-right: 55px;
+  font-size: 16px;
+  color: #053694;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media(max-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 9px;
+  }
 }
