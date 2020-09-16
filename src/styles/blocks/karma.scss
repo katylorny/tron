@@ -1,0 +1,26 @@
+.karma {
+  button {
+    min-width: 18px;
+    height: 8px;
+  }
+
+}
+
+.karma__number {
+  width: 40px;
+  height: 23px;
+  display: block;
+  background: #EAFBF0;
+  color: #16952D;
+  text-align: center;
+  margin: 0 8px;
+}
+
+.karma__top {
+  background: url("../img/icon-top-arrow.svg") no-repeat;
+}
+
+.karma__down {
+  background: url("../img/icon-top-arrow.svg") no-repeat;
+  transform: rotate(180deg);
+}
