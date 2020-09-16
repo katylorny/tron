@@ -5,21 +5,23 @@ block header
 
 block content
   main.main.container
-    .registration.white-window.align-items-center.mt-3.mb-4
+    .registration.white-window.align-items-center.auth-window
       .registration__fields.d-flex.flex-column
         .d-flex.align-items-center
-          label(for="email") E-mail
-          input.input-underline(type="email" id="email" name="email" placeholder="Адрес электронной почты")
-        .d-flex.align-items-center.mb-4
-          label(for="password") Пароль
-          input.input-underline(type="password" id="password" name="password")
-      button.registration__button.btn.btn-primary.mb-3(type="submit") Войти
-      p.mb-3 или
-      a.btn.btn-underline(href="#") Зарегистрироваться
-      a.btn.btn-underline.mb-4(href="#") Я забыл пароль
+          label(for="email").auth__label E-mail
+          input.input-underline.auth__input(type="email" id="email" name="email" placeholder="Адрес электронной почты")
+        .d-flex.align-items-center.mb-4.field.registration__field--field
+          label(for="password").auth__label Пароль
+          input.input-underline.auth__input(type="password" id="password" name="password", placeholder="Пароль")
+      button.auth__button.btn.btn-primary.mb-3(type="submit") Войти
+      p.registration__or или
+      a.btn.btn-underline.registration__sing-up(href="#") Зарегистрироваться
+      a.btn.btn-underline.mb-4.registration__forget(href="#") Я забыл пароль
 
-    p.warning.text-danger.mx-auto.mb-5 Текст ошибки тут, закрашивает строки в красный
-    .d-flex.mx-auto.justify-content-center
-        a.text-info.mx-2(href="#") Политика конфиденциальности
-        a.text-info.mx-2(href="#") Пользовательское соглашение
-        a.text-info.mx-2(href="#") Реквизиты
+    p.warning.text-danger.mx-auto.mb-5.registration__danger Неверный пароль
+
+block footer
+  footer.d-flex.mx-auto.justify-content-center.auth-footer
+    a.text-info.footer__link(href="#") Политика конфиденциальности
+    a.text-info.footer__link(href="#") Пользовательское соглашение
+    a.text-info.footer__link(href="#") Реквизиты
