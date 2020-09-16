@@ -1,5 +1,5 @@
 .thread-new {
-  padding: 20px 156px 70px 115px;
+  padding: 20px 156px 45px 115px;
 
   input {
     max-width: 100%;
@@ -10,4 +10,15 @@
       color: #363636;
     }
   }
+}
+
+.thread-new__section {
+  min-width: 194px;
+  text-align: left;
+}
+
+.thread-new__send-button {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
 }

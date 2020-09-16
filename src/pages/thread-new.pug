@@ -15,7 +15,7 @@ block content
           a.text-info(href="#") Мои темы
           span.text-grey.ml-10 1
 
-      .content.right-column.thread-new.bg-white.rounded.d-flex-flex-column.shadow
+      .content.right-column.thread-new.bg-white.rounded.d-flex-flex-column.shadow.position-relative
         h2 Название
         input#title.input-underline.w-100(type="text" placeholder="Начните вводить название..")
         p.text-light-grey.mb-30 Чтобы вам было удобно читать, пожалуйста, уместите название в одну строку
@@ -23,9 +23,9 @@ block content
         input#description.input-underline.w-100(type="text" placeholder="Введите описание")
         p.text-light-grey Тут можно полностью описать вашу тему
         h2 Выберите раздел
-        .btn-group
-          button.btn.btn-underline(type='button') Action
-          button.btn.btn-underline.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .btn-group.input-underline.p-0
+          button.thread-new__section.btn.p-0(type='button') Action
+          button.btn.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
             span.sr-only Toggle Dropdown
           .dropdown-menu
             a.dropdown-item(href='#') Action
@@ -38,6 +38,7 @@ block content
         input#file.sr-only(type="file" multiple)
         label(for="file")
           img(src="img/icon-add-file-blue.svg" width="31" height="31")
+        button.thread-new__send-button.btn.btn-underline(data-toggle="modal" data-target="#modalPublished") Опубликовать
 
 
 
@@ -45,15 +46,11 @@ block content
 
 
 
-  #modalUser.modal.user.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+  #modalPublished.modal.published.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
     .modal-dialog
       .modal-content
         .modal-body.d-flex.flex-column.align-items-center
           button.btn.user__close-button(type='button', data-dismiss='modal', aria-label='Close')
             img(src="img/icon-close-modal.svg" width="16" height="16")
-          a.user__user-pic.d-block.rounded-circle.overflow-hidden.mb-20(href="#")
-            img(src="img/userpic.jpg" width="100" height="100")
-          h2.mb-20 Константин Двугрошев
-          a.text-info.mb-20(href="#") Начать диалог
-          p.mb-20 Маркетолог
-          p Тут можно рассказать о себеТут можно рассказать о себе Тут можно рассказать о себе Тут можно рассказать о себе Тут можно рассказать о себе Тут можно рассказать о себе Тут можно рассказать о себе
+          h2 Успешно опубликовано
+          img(src="img/icon-done.svg" width="80" height="80")
