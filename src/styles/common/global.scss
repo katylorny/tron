@@ -88,6 +88,37 @@ h2 {
   background-position-y: 40%;
 }
 
+.input-underline {
+
+}
+
+.input-underline {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+  padding-left: 15px;
+  height: 30px;
+  margin: 5px 0;
+  max-width: 275px;
+  //border-bottom: 2px solid #c4c4c4;
+  //height: 34px;
+  //padding-left: 0;
+
+
+  &:focus {
+    border-bottom: 2px solid #528DFF;
+    outline: none;
+
+    &::placeholder {
+      color: #528DFF;
+    }
+  }
+}
+
+.shadow {
+  box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+}
+
 .nav-link {
   color: $btn-blue;
 }
@@ -165,15 +196,7 @@ h2 {
   color: $grey-text;
 }
 
-.input-underline {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #d2d2d2;
-  padding-left: 15px;
-  height: 30px;
-  margin: 5px 0;
-  max-width: 275px;
-}
+
 
 .status-icon {
   width: 80px;
@@ -265,6 +288,10 @@ h2 {
   margin-left: 30px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mr-30 {
   margin-right: 30px;
 }
@@ -306,4 +333,8 @@ h2 {
   @media (max-width: $desktop-width) {
     width: 100%;
   }
+}
+
+.text-light-grey {
+  color: #7E7E7E;
 }

@@ -1,0 +1,59 @@
+extends common/layout
+
+block header
+  include common/header
+
+block content
+  main.main.container-lg.p-0.pt-40
+    .main__wrapper.d-flex.ml-0.justify-content-between
+      .sidebar.left-column
+        a.d-flex.text-info.align-items-center.mb-20(href="#")
+          img(src="img/icon-back.svg" width="30" height="5")
+          span.ml-2 назад
+        p.text-light-grey При выходе со страницы неопубликованный текст будет удален
+        .sidebar__my-themes.bg-white.rounded.d-flex.shadow
+          a.text-info(href="#") Мои темы
+          span.text-grey.ml-10 1
+
+      .content.right-column.thread-new.bg-white.rounded.d-flex-flex-column.shadow
+        h2 Название
+        input#title.input-underline.w-100(type="text" placeholder="Начните вводить название..")
+        p.text-light-grey.mb-30 Чтобы вам было удобно читать, пожалуйста, уместите название в одну строку
+        h2 Описание
+        input#description.input-underline.w-100(type="text" placeholder="Введите описание")
+        p.text-light-grey Тут можно полностью описать вашу тему
+        h2 Выберите раздел
+        .btn-group
+          button.btn.btn-underline(type='button') Action
+          button.btn.btn-underline.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            span.sr-only Toggle Dropdown
+          .dropdown-menu
+            a.dropdown-item(href='#') Action
+            a.dropdown-item(href='#') Another action
+            a.dropdown-item(href='#') Something else here
+            .dropdown-divider
+            a.dropdown-item(href='#') Separated link
+        h2 Прикрепите файлы
+        p.text-light-grey Можно прикрепить документы и фотографии
+        input#file.sr-only(type="file" multiple)
+        label(for="file")
+          img(src="img/icon-add-file-blue.svg" width="31" height="31")
+
+
+
+
+
+
+
+  #modalUser.modal.user.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog
+      .modal-content
+        .modal-body.d-flex.flex-column.align-items-center
+          button.btn.user__close-button(type='button', data-dismiss='modal', aria-label='Close')
+            img(src="img/icon-close-modal.svg" width="16" height="16")
+          a.user__user-pic.d-block.rounded-circle.overflow-hidden.mb-20(href="#")
+            img(src="img/userpic.jpg" width="100" height="100")
+          h2.mb-20 Константин Двугрошев
+          a.text-info.mb-20(href="#") Начать диалог
+          p.mb-20 Маркетолог
+          p Тут можно рассказать о себеТут можно рассказать о себе Тут можно рассказать о себе Тут можно рассказать о себе Тут можно рассказать о себе Тут можно рассказать о себе Тут можно рассказать о себе
