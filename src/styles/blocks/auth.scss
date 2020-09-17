@@ -89,6 +89,6 @@
   margin-bottom: 13px;
 
   @media(max-width: $tablet-width) {
-    width: 100%;
+    width: 100% !important;
   }
 }
