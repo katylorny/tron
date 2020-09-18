@@ -69,6 +69,10 @@ h2 {
   border-radius: 0;
   width: fit-content;
   white-space: nowrap;
+
+  @media (max-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .text-danger {
@@ -233,6 +237,10 @@ h2 {
 .warning {
   max-width: 369px;
   text-align: center;
+}
+
+.btn {
+  font-family: $helvetica-neue;
 }
 
 //.mb-3 {

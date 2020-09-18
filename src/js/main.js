@@ -23,3 +23,13 @@ $(`#modalUser`).modal({
 // $(`#modalNotifications`).on(`shown.bs.modal`, function () {
 //     $(`.modal-backdrop`).addClass(`modal-backdrop--transparent`)
 // })
+
+$(`#modalUserMenu`).modal({
+    backdrop: false,
+    show: false
+})
+
+$(`#modalUserEdit`).modal({
+    backdrop: false,
+    // show: false
+})

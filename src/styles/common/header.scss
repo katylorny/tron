@@ -4,6 +4,10 @@
     .left-column {
       //margin-right: 3%;
     }
+
+  @media (max-width: $tablet-width) {
+    //background: white;
+  }
 }
 
 .header__nav {

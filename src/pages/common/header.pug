@@ -11,10 +11,10 @@ header.header.container-lg.p-lg-0
       li.nav-item.mr-60.header__notification
         button.header__icon.header__icon--notifications.d-block.text-hide(data-toggle="modal" data-target="#modalNotifications") Уведомления
       li.nav-item.ml-8
-        a.header__user.d-block.rounded-circle.overflow-hidden(href="")
+        a.header__user.d-block.rounded-circle.overflow-hidden(href="#" data-toggle="modal" data-target="#modalUserMenu")
           img(src="img/userpic.jpg")
 
-  #modalNotifications.modal.notifications.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+  #modalNotifications.modal.modal-menu.notifications.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
     .modal-dialog
       .modal-content.border-0.rounded-0.h-100
         .modal-header.d-flex.align-items-center.justify-content-start
@@ -23,9 +23,93 @@ header.header.container-lg.p-lg-0
             span(aria-hidden='true') Закрыть
         .modal-body
           .list-group.rounded-0
-            .notifications__item.notifications__item--new.list-group-item.border-left-0.border-right-0
+            .notifications__item.notifications__item--new.list-group-item.border-left-0.border-right-0.border-top-0
               p <a href="#" class="text-info">Артур Коломыцын</a> написал в <a href="#" class="text-info">UX дизайн</a>
               span.notifications__date 13.03.2020 15:10
-            .notifications__item.list-group-item.border-left-0.border-right-0
+            .notifications__item.list-group-item.border-left-0.border-right-0.border-top-0
               p <a href="#" class="text-info">Артем Лаптев</a> ответил вам в <a href="#" class="text-info">UX дизайн</a>
               span.notifications__date 13.03.2020 15:10
+
+  #modalUserMenu.modal.modal-menu.menu.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog
+      .modal-content.border-0.rounded-0.h-100
+        .modal-header.d-flex.align-items-center.justify-content-start
+          h2.modal-title.font-size-16.mr-35 Артём Лаптев
+          button.notifications__close-button.button.btn.btn-underline(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') Закрыть
+        .modal-body
+          .list-group
+            .menu__item.list-group-item.border-top-0.border-left-0.border-right-0.d-flex.flex-column
+              a.text-info(href="#") Создать тему
+              a.text-info(href="#") Мои темы
+
+            .menu__item.list-group-item.border-top-0.border-left-0.border-right-0.border-bottom.d-flex.flex-column
+              a.text-info(href="#") Реестр членов
+              a.text-info(href="#") Экосистема
+
+            .menu__item.d-flex.flex-column.list-group-item.border-top-0.border-left-0.border-right-0.border-bottom-0
+              a.text-info(href="#") Редактировать профиль
+              a.text-info(href="#") Выйти
+
+            .menu__item.d-flex.flex-column.list-group-item.border-top-0.border-left-0.border-right-0.border-bottom-0
+              p.menu__warning.text-danger(href="#") Подписка заканчивается через 8 дней
+              a.text-info(href="#") Продлить
+
+  #modalUserEdit.modal.modal-menu.menu.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog
+      .modal-content.border-0.rounded-0.h-100
+        .modal-header.d-flex.align-items-center.justify-content-start
+          h2.menu__edit-title.modal-title.font-size-16.mr-35 Редактировать профиль
+          button.notifications__close-button.button.btn.btn-underline(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') Закрыть
+        .modal-body
+          .list-group
+            .menu__item.list-group-item.border-top-0.border-left-0.border-right-0.d-flex
+              a.menu__tab.active.text-info(href="#") Учетная запись
+              a.menu__tab.text-info(href="#") Обо мне
+            .menu__account
+              .menu__item.list-group-item.border-top-0.border-left-0.border-right-0.border-bottom.d-flex.flex-column
+                a.text-info(href="#") Сменить пароль
+                a.text-info(href="#") Сменить почту
+
+              .menu__item.d-flex.flex-column.list-group-item.border-top-0.border-left-0.border-right-0.border-bottom-0
+                h2 Мой email
+                p laptevart.em@ya.ru
+
+                h2 Уведомления
+                .d-flex.menu__checkbox
+                  input#emailMessages(type="checkbox")
+                  label(for="emailMessages") Получать уведомления на email о поступлении новых личных сообщений
+                .d-flex.menu__checkbox
+                  input#emailAnswers(type="checkbox")
+                  label(for="emailAnswers") Получать уведомления на email об ответах в моих темах
+            .menu__about-me
+              .menu__item.d-flex.flex-column.list-group-item.border-top-0.border-left-0.border-right-0.border-bottom-0
+                h2 Меня зовут
+                input.input-underline(type="text" placeholder="Имя")
+                input.input-underline(type="text" placeholder="Фамилия")
+                h2 Часовой пояс
+                .btn-group.input-underline.p-0
+                  button.btn.p-0.font-size-16.font-weight-normal.overflow-hidden(type='button') Europe/Moscow GTM +03:00
+                  button.btn.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    span.sr-only Toggle Dropdown
+                  .dropdown-menu
+                    a.dropdown-item(href='#') Europe/Moscow GTM +03:00
+                    a.dropdown-item(href='#') Another action
+                    a.dropdown-item(href='#') Something else here
+                    .dropdown-divider
+                    a.dropdown-item(href='#') Separated link
+
+                .d-flex.justify-content-between.align-items-center
+                  h2.m-0 Моя фотография
+                  button.menu__delete-photo-button.btn.btn-underline Удалить
+                .menu__user-pic.d-block.rounded-circle.overflow-hidden
+                  img(src="img/userpic.jpg")
+                h2 Деятельность
+                input.input-underline(type="text" placeholder="Работа")
+                h2 Обо мне
+                input.input-underline(type="text" placeholder="Можно написать о себе")
+
+
+            button.menu__save-button.btn.text-info.font-size-20 Сохранить изменения
+

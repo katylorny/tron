@@ -1,21 +1,21 @@
 .notifications {
-    .modal-dialog {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 435px;
-        margin: 0;
-        height: calc(100vh - 70px);
-
-      @media (max-width: $tablet-width) {
-        width: 100%;
-
-      }
-    }
-
-    .modal-body {
-        padding: 0;
-    }
+    //.modal-dialog {
+    //    position: absolute;
+    //    top: 70px;
+    //    right: 0;
+    //    width: 435px;
+    //    margin: 0;
+    //    height: calc(100vh - 70px);
+    //
+    //  @media (max-width: $tablet-width) {
+    //    width: 100%;
+    //
+    //  }
+    //}
+    //
+    //.modal-body {
+    //    padding: 0;
+    //}
 }
 
 .notifications__item--new {
