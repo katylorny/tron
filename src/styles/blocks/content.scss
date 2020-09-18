@@ -1,0 +1,14 @@
+.content__tabs {
+  width: 50%;
+  margin-left: auto;
+
+  @media (max-width: $desktop-width) {
+
+  }
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+}

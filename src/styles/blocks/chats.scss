@@ -7,6 +7,11 @@
     height: 55px;
     flex-shrink: 0;
     margin-right: 10px;
+
+  @media (max-width: $tablet-width) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .chats__item {

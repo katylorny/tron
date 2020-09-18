@@ -336,3 +336,9 @@ h2 {
 .text-light-grey {
   color: #7E7E7E;
 }
+
+.content-wrapper {
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+  }
+}

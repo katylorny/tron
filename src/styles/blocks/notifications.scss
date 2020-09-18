@@ -1,7 +1,3 @@
-//.modal-backdrop--transparent {
-//  background: transparent;
-//}
-
 .notifications {
     .modal-dialog {
         position: absolute;
@@ -10,6 +6,11 @@
         width: 435px;
         margin: 0;
         height: calc(100vh - 70px);
+
+      @media (max-width: $tablet-width) {
+        width: 100%;
+
+      }
     }
 
     .modal-body {

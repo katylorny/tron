@@ -4,10 +4,10 @@ block header
   include common/header
 
 block content
-  main.main.container.pt-5
-    .row.ml-0.px-3.justify-content-between
-      .sidebar.left-column
-        .sidebar__sections.bg-white.rounded-lg.shadow-sm
+  main.main.container-lg.p-0
+    .d-flex.ml-0.px-3.justify-content-between.flex-nowrap
+      .left-column.chats-list
+        .bg-white.rounded-lg.shadow-sm
           .list-group.chats
             .chats__search.list-group-item.rounded-0.mb-0.border-top-0.border-left-0.border-right-0.p-0
               input.input-search.form-control.form-control-plaintext.border-0(type="text" placeholder="Поиск людей")
@@ -32,7 +32,7 @@ block content
                 p.font-size-14.mb-0 Василий Пупкин
 
 
-      .content.right-column.chat.bg-white.d-flex.flex-column
+      .chat.right-column.d-flex.flex-column
         .chat__messages.d-flex.flex-column.justify-content-end
           span.chat__date.d-block.mx-auto 29 марта
           .chat__message

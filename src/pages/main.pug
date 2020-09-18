@@ -4,33 +4,33 @@ block header
   include common/header
 
 block content
-  main.main.container.pt-5
-    .row.ml-0.px-3.justify-content-between
+  main.main.container-lg.p-0.pt-1.pt-lg-5
+    .d-flex.ml-0.justify-content-between.content-wrapper
       .sidebar.left-column
-        .sidebar__sections.bg-white.rounded-lg.shadow-sm
-          .list-group
-            h2.list-group-item.mb-0.border-bottom.border-top-0.border-left-0.border-right-0 Разделы
-            ul.list-group-item.nav.flex-column.border-0
-              li.mb-2
+        .sidebar__sections.rounded-lg
+          .d-flex.flex-column
+            h2.mb-0.border-bottom Разделы
+            ul.sidebar__sections-list.nav.border-0
+              li.sidebar__section.mb-2
                 a.text-info(href="#") Финансы
                   span.sidebar__value 223
-              li.mb-2
+              li.sidebar__section.mb-2
                 a.text-info(href="#") ПОЛО
                   span.sidebar__value 223
-              li.mb-2
+              li.sidebar__section.mb-2
                 a.text-info(href="#") ТРОН
                   span.sidebar__value 223
-              li.mb-2
+              li.sidebar__section.mb-2
                 a.text-info(href="#") Инвестиции
                   span.sidebar__value 223
-              li.mb-2
+              li.sidebar__section.mb-2
                 a.text-info(href="#") Мои темы
                   span.sidebar__value 1
-              li.pt-4
+              li.sidebar__all.pt-4
                 a.btn-underline(href="#") Все темы
-        .sidebar__info.bg-white.rounded-lg.shadow-sm.nav.flex-column.px-3.mt-4.pt-2
-          a.text-info.mb-2(href="") Помощь
-          a.text-info.mb-2(href="") Документы
+        .sidebar__info.rounded-lg
+          a.sidebar__section.text-info.mb-2(href="") Помощь
+          a.sidebar__section.text-info.mb-2(href="") Документы
           ul.nav.mb-3
             li
               a.sidebar__social.sidebar__social--ok.text-hide(href="#")
@@ -41,14 +41,14 @@ block content
             li
               a.sidebar__social.sidebar__social--vk.text-hide(href="#")
                 img(src="img/icon-vk.svg" width="35" height="19")
-          span 18+
+          span.sidebar__18 18+
 
         .sidebar__subscription.bg-white.rounded-lg.shadow-sm.nav.flex-column.px-3.mt-4.pt-2
           p.text-danger Подписка заканчивается через 8 дней
           a.btn-underline.d-block Продлить
 
       .content.right-column
-        ul.nav.nav-tabs.w-50.ml-auto.mr-3.mb-4
+        ul.content__tabs.nav.nav-tabs.mr-3.mb-4
           li.nav-item
             a.nav-link.active.px-0(href="#") Популярное
           li.nav-item
