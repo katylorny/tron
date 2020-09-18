@@ -79,18 +79,8 @@ h2 {
   color: $btn-blue !important;
 }
 
-.input-search {
-  padding-left: 35px;
-  border-bottom: 1px solid #c4c4c4;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-size: 16px;
-  background-position-y: 40%;
-}
 
-.input-underline {
 
-}
 
 .input-underline {
   background: transparent;
@@ -113,6 +103,15 @@ h2 {
       color: #528DFF;
     }
   }
+}
+
+.input-search {
+  padding-left: 35px;
+  border-bottom: 1px solid #c4c4c4;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position-y: 40%;
 }
 
 .shadow {

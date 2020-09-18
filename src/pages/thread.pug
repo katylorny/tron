@@ -21,7 +21,7 @@ block content
               img(src="img/icon-edit.svg" width="14" height="14")
             button.btn.p-0.ml-1.text-info.d-none.d-lg-flex(type="button")
               img(src="img/icon-close.svg" width="16" height="16")
-              span.lh-16(data-toggle="modal" data-target="#modalComplaint") Пожаловаться
+              span.lh-16(data-toggle="modal" data-target="#modalComplaintReasons") Пожаловаться
             button.btn.d-lg-none.p-0.ml-30(type="button")
               img(src="img/icon-options.svg" width="19" height="4")
             p.ml-auto.mb-0.lh-16.d-none.d-md-block
@@ -69,7 +69,7 @@ block content
                     span.karma__number 4
                     button.karma__down.btn.p-0.text-hide Минус
                   button.btn.p-0.ml-auto.text-info.d-none.d-lg-flex(type="button")
-                    span(data-toggle="modal" data-target="#modalComplaint") Пожаловаться
+                    span(data-toggle="modal" data-target="#modalComplaintReasons") Пожаловаться
                     img(src="img/icon-close.svg")
                   button.btn.d-lg-none.ml-auto(type="button")
                     img(src="img/icon-options.svg" width="19" height="4")
@@ -122,4 +122,30 @@ block content
             img(src="img/icon-close-modal.svg" width="16" height="16")
           h2 Жалоба успешно отправлена
           img(src="img/icon-done.svg" width="80" height="80")
+
+  #modalComplaintReasons.modal.complaint.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog
+      .modal-content
+        .modal-body.d-flex.flex-column.align-items-center
+          h2 Причины жалобы
+          ul.list-unstyled
+            li
+              input#spam(type="radio" name="Complaint")
+              label.complaint__label(for="spam") Спам
+
+            li
+              input#affront(type="radio" name="Complaint")
+              label.complaint__label(for="affront") Оскорбление
+
+            li
+              input#propaganda(type="radio" name="Complaint")
+              label.complaint__label(for="propaganda") Пропаганда
+
+            li
+              input#violence(type="radio" name="Complaint")
+              label.complaint__label(for="violence") Насилие
+
+            li
+              input#another(type="radio" name="Complaint")
+              label.complaint__label(for="another") Хочу удалить
 
