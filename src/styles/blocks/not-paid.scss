@@ -1,0 +1,35 @@
+.not-paid {
+  .modal-dialog {
+    margin-top: 20vh;
+    @media (max-width: $tablet-width) {
+      bottom: 0;
+      position: absolute;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .modal-content {
+    @media (max-width: $tablet-width) {
+
+    }
+  }
+  .modal-body {
+    padding: 124px 112px 99px;
+
+    //@media (max-width: $tablet-width) {
+    //  padding: 124px 36px 40px;
+    //  position: absolute;
+    //  bottom: 0;
+    //  margin-bottom: 0;
+    //}
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.not-paid__text {
+  margin-bottom: 40px;
+  text-align: center;
+}

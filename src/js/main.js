@@ -33,3 +33,7 @@ $(`#modalUserEdit`).modal({
     backdrop: false,
     show: false
 })
+
+$(`#modalNotPaid`).modal({
+
+})
