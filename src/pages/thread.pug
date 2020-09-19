@@ -7,7 +7,7 @@ block content
   main.main.container-lg.p-0.pt-40
     .main__wrapper.d-flex.ml-0.justify-content-between
       .sidebar.left-column
-        a.d-flex.text-info.align-items-center(href="#")
+        a.sidebar__back-button.d-flex.text-info.align-items-center(href="#")
           img(src="img/icon-back.svg" width="30" height="5")
           span.ml-2 вернуться к списку
 
@@ -15,30 +15,30 @@ block content
         .thread__main.bg-white.d-flex.flex-column
           a.thread__author-pic.d-none.d-md-block.rounded-circle.overflow-hidden(href="#")
             img(src="img/userpic.jpg")
-          .d-flex.mb-20.align-items-end.flex-wrap.flex-md-nowrap
-            h2.m-0.font-size-20.text-info UX дизайн ПОЛО
+          .thread__head.d-flex.mb-20.align-items-end.flex-wrap.flex-md-nowrap
+            h2.thread__title.font-size-20.text-info UX дизайн ПОЛО
             button.btn.p-0.ml-2.d-none.d-lg-block(type="button")
               img(src="img/icon-edit.svg" width="14" height="14")
             button.btn.p-0.ml-1.text-info.d-none.d-lg-flex(type="button")
               img(src="img/icon-close.svg" width="16" height="16")
               span.lh-16(data-toggle="modal" data-target="#modalComplaintReasons") Пожаловаться
-            button.btn.d-lg-none.p-0.ml-30(type="button")
-              img(src="img/icon-options.svg" width="19" height="4")
-            p.ml-auto.mb-0.lh-16.d-none.d-md-block
-              span.font-size-20 2
-              span.ml-1 сообщения
-            .d-md-none.w-100
-              span.font-size-12 Сообщений
-              p
-                span 9473
-                span.text-danger +999
+
+            p.thread__messages.ml-auto.mb-0.lh-16
+              span.thread__messages-count.font-size-20 2
+              span.thread__new-messages-count.text-danger.font-size-20 +999
+              span.thread__desktop-span.ml-1 сообщения
+              span.thread__mobile-span Сообщений
           .thread__author.d-flex.mb-45
+            a.thread__pic.rounded-circle.overflow-hidden(href="#")
+              img(src="img/userpic.jpg")
             span.font-size-12.d-none.d-md-block Автор
             .d-flex.flex-row.ml-10.flex-md-column
               span.font-size-14.order-1.order-md-0 13.03.2020 15:10
               span.font-size-14.mr-2.mr-md-0 Константин Двугрошев
+            button.thread__options-button.btn.d-lg-none.p-0.ml-30(type="button")
+              img(src="img/icon-options.svg" width="19" height="4")
           p.thread__text.mb-20 Тут может быть текстовое описание треда. Пользователь самостоятельно пишет текст, который будет обязательно виден при первом открытие темы, но с возможностью свернуть его. При повторных открытиях текст будет свернут, но с возможностью открыть его  Так же можно приаттачить файлы Ширина текстового контейнера 600 пикслей
-          .d-flex
+          .thread__files.d-flex
             input.sr-only(type="file" id="add-file" multiple)
             label.thread__add-file(for="add-file")
               img(src="img/icon-add-file.svg" width="15" height="17")
@@ -63,7 +63,7 @@ block content
                 a.thread__author-pic.d-block.d-md-block.rounded-circle.overflow-hidden(href="#")
                   img(src="img/userpic.jpg")
                 .d-flex.align-items-end.mb-10
-                  h2.m-0.text-info.font-size-20 Вадим Паясу
+                  h2.thread__comment-author.m-0.text-info.font-size-20 Вадим Паясу
                   .thread__karma.karma.d-flex.align-items-center
                     button.karma__top.btn.p-0.text-hide Плюс
                     span.karma__number 4
@@ -71,7 +71,7 @@ block content
                   button.btn.p-0.ml-auto.text-info.d-none.d-lg-flex(type="button")
                     span(data-toggle="modal" data-target="#modalComplaintReasons") Пожаловаться
                     img(src="img/icon-close.svg")
-                  button.btn.d-lg-none.ml-auto(type="button")
+                  button.thread__options-button.btn.d-lg-none.ml-auto.p-0.align-self-start(type="button")
                     img(src="img/icon-options.svg" width="19" height="4")
                 span.thead__changed.mb-20 Изменено 17.03.2020 16.59
                 p.mb-20 Костян, почти все, нужны бабки
@@ -82,11 +82,11 @@ block content
                     a.thread__author-pic.d-block.rounded-circle.overflow-hidden(href="#" data-toggle="modal" data-target="#modalUser")
                       img(src="img/userpic.jpg")
                     .d-flex.align-items-end.mb-10
-                      h2.m-0.text-info.font-size-20 Константин Двугрошев
-                      span.thread__author.mb-0.ml-2 Автор
+                      h2.thread__comment-author.m-0.text-info.font-size-20 Константин Двугрошев
+                      span.thread__author-span.mb-0.ml-2 Автор
                       button.btn.p-0.ml-2.d-none.d-lg-block(type="button")
                         img(src="img/icon-edit.svg" width="14" height="14")
-                      button.btn.d-lg-none.ml-auto(type="button")
+                      button.thread__options-button.btn.d-lg-none.ml-auto.p-0.align-self-start(type="button")
                         img(src="img/icon-options.svg" width="19" height="4")
                     span.thead__changed.mb-20 Изменено 17.03.2020 16.59
                     p.mb-20 <a href="#" class="text-info"> Вадим</a>, денег не будет

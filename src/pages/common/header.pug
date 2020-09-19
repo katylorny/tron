@@ -48,14 +48,14 @@ header.header.container-lg.p-lg-0
               a.text-info(href="#") Экосистема
 
             .menu__item.d-flex.flex-column.list-group-item.border-top-0.border-left-0.border-right-0.border-bottom-0
-              a.text-info(href="#") Редактировать профиль
+              a.text-info(href="#" data-toggle="modal" data-target="#modalUserEdit") Редактировать профиль
               a.text-info(href="#") Выйти
 
             .menu__item.d-flex.flex-column.list-group-item.border-top-0.border-left-0.border-right-0.border-bottom-0
               p.menu__warning.text-danger(href="#") Подписка заканчивается через 8 дней
               a.text-info(href="#") Продлить
 
-  #modalUserEdit.modal.modal-menu.menu.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+  #modalUserEdit.modal.modal-menu.menu(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
     .modal-dialog
       .modal-content.border-0.rounded-0.h-100
         .modal-header.d-flex.align-items-center.justify-content-start

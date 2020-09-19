@@ -132,3 +132,10 @@
     display: none;
   }
 }
+
+.sidebar__back-button {
+  @media (max-width: $tablet-width) {
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+}

@@ -31,5 +31,5 @@ $(`#modalUserMenu`).modal({
 
 $(`#modalUserEdit`).modal({
     backdrop: false,
-    // show: false
+    show: false
 })
