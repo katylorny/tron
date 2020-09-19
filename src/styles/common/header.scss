@@ -109,3 +109,13 @@
     right: -1px;
   }
 }
+
+
+.header__search-list {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  top: 39px;
+  z-index: 2;
+}
