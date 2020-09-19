@@ -57,120 +57,130 @@ block content
             a.nav-link.px-0(href="#") Слежу
 
         .content__chats
-          a.content__chat.d-flex.py-2.pl-4.pr-3.rounded-lg.shadow-sm.mb-4(href="#")
-            .content__avatar.rounded-circle.d-block.font-size-14ck.overflow-hidden
+          a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
+            .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
               img(src="img/userpic.jpg" alt="Аватарка пользователя")
-            .d-block.ml-2
-              h2.text-info UX дизайн форума ТРОН
-              .row.ml-0
-                .d-flex
-                  p.mr-2.font-size-12(style="margin-top: 2px") Автор
-                  .d-block.mr-4.font-size-14
-                    p.mb-0 Константин Двугрошев
-                    p.mb-0 13.03.2020 15:10
-                .d-flex
-                  p.mr-2.font-size-12(style="margin-top: 2px") Последнее
-                  .d-block.mr-2.font-size-14
-                    p.mb-0 Константин Двугрошев
-                    p.mb-0 13.03.2020 15:10
-            .d-flex.flex-column.ml-auto
+            .d-flex.ml-2.flex-wrap
+              h2.text-info.w-100 UX дизайн форума ТРОН
+              .d-flex.chat-card__chat-author
+                .chat-card__pic.rounded-circle.overflow-hidden(href="#")
+                  img(src="img/userpic.jpg" width="25" height="25")
+                p.chat-card__word-author.mr-2.font-size-12 Автор
+                .chat-card__author-info.mr-4.font-size-14
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+              .d-flex.chat-card__last-message
+                p.mr-2.font-size-12 Последнее
+                .d-block.mr-2.font-size-14
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+            .chat-card__new-messages.d-flex.flex-column.ml-auto
               table.content__table.table.table-borderless
-                tr
+                tr.content__first-tr
                   td
                     span.d-block.font-size-20.font-weight-bold 3434
-                  td
+                  td.content__word-messages
                     span.d-block.font-size-12 Сообщений
-                tr
-                  td.content__table-left
+                tr.chat-card__new-messages-count
+                  td.chat-card__table-left
                     span.mr1.font-size-20.text-danger.font-weight-bolder +1
-                  td.content__table__right
+                  td.chat-card__table-right.chat__card--word-new
                     span.text-danger.font-size-12 Новое
               button.btn.btn-underline.mt-auto.ml-auto Следить
 
-          a.content__chat.d-flex.py-2.pl-4.pr-3.rounded-lg.shadow-sm.mb-4(href="#")
-            .content__avatar.rounded-circle.d-block.font-size-14ck.overflow-hidden
+          a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
+            .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
               img(src="img/userpic.jpg" alt="Аватарка пользователя")
-            .d-block.ml-2
-              h2.text-info Пропаганда идей Универсализма А.В. Кашанского А.П. Девятова. Организация и проведение Презентаций!
-              .row.ml-0
-                .d-flex
-                  p.mr-2.font-size-12(style="margin-top: 2px") Автор
-                  .d-block.mr-4.font-size-14
-                    p.mb-0 Константин Двугрошев
-                    p.mb-0 13.03.2020 15:10
-                .d-flex
-                  p.mr-2.font-size-12(style="margin-top: 2px") Последнее
-                  .d-block.mr-2.font-size-14
-                    p.mb-0 Константин Двугрошев
-                    p.mb-0 13.03.2020 15:10
-            .d-flex.flex-column.ml-auto
+            .d-flex.ml-2.flex-wrap
+              h2.text-info.w-100 UX дизайн форума ТРОН
+              .d-flex.chat-card__chat-author
+                .chat-card__pic.rounded-circle.overflow-hidden(href="#")
+                  img(src="img/userpic.jpg" width="25" height="25")
+                p.chat-card__word-author.mr-2.font-size-12 Автор
+                .chat-card__author-info.mr-4.font-size-14
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+              .d-flex.chat-card__last-message
+                p.mr-2.font-size-12 Последнее
+                .d-block.mr-2.font-size-14
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+            .chat-card__new-messages.d-flex.flex-column.ml-auto
               table.content__table.table.table-borderless
-                tr
+                tr.content__first-tr
                   td
                     span.d-block.font-size-20.font-weight-bold 3434
-                  td
+                  td.content__word-messages
                     span.d-block.font-size-12 Сообщений
-                tr
-                  td.content__table-left
+                tr.chat-card__new-messages-count
+                  td.chat-card__table-left
                     span.mr1.font-size-20.text-danger.font-weight-bolder +1
-                  td.content__table__right
+                  td.chat-card__table-right.chat__card--word-new
                     span.text-danger.font-size-12 Новое
-              button.btn.btn-underline.mt-auto.ml-auto Перестать следить
+              button.btn.btn-underline.mt-auto.ml-auto Следить
 
-          a.content__chat.d-flex.py-2.pl-4.pr-3.rounded-lg.shadow-sm.mb-4(href="#")
-            .content__avatar.rounded-circle.d-block.font-size-14ck.overflow-hidden
-              img(src="img/userpic.jpg" alt="Аватарка пользователя")
-            .d-block.ml-2
-              h2.text-info Проект «Книга ВЕЖДИЗМ»
-              .row.ml-0
-                .d-flex
-                  p.mr-2.font-size-12(style="margin-top: 2px") Автор
-                  .d-block.mr-4.font-size-14
-                    p.mb-0 Константин Двугрошев
-                    p.mb-0 13.03.2020 15:10
-                .d-flex
-                  p.mr-2.font-size-12(style="margin-top: 2px") Последнее
-                  .d-block.mr-2.font-size-14
-                    p.mb-0 Константин Двугрошев
-                    p.mb-0 13.03.2020 15:10
-            .d-flex.flex-column.ml-auto
-              table.content__table.table.table-borderless
-                tr
-                  td
-                    span.d-block.font-size-20.font-weight-bold 1000
-                  td
-                    span.d-block.font-size-12 Сообщений
-                tr
-                  td.content__table-left
-                    span.mr1.font-size-20.text-danger.font-weight-bolder +7
-                  td.content__table__right
-                    span.text-danger.font-size-12 Новых
 
-          a.content__chat.d-flex.py-2.pl-4.pr-3.rounded-lg.shadow-sm.mb-4(href="#")
-            .content__avatar.rounded-circle.d-block.font-size-14ck.overflow-hidden
+          a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
+            .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
               img(src="img/userpic.jpg" alt="Аватарка пользователя")
-            .d-block.ml-2
-              h2.text-info Платформа онлайн образования "Школы Здравого Смысла"
-              .row.ml-0
-                .d-flex
-                  p.mr-2.font-size-12(style="margin-top: 2px") Автор
-                  .d-block.mr-4.font-size-14
-                    p.mb-0 Константин Двугрошев
-                    p.mb-0 13.03.2020 15:10
-                .d-flex
-                  p.mr-2.font-size-12(style="margin-top: 2px") Последнее
-                  .d-block.mr-2.font-size-14
-                    p.mb-0 Константин Двугрошев
-                    p.mb-0 13.03.2020 15:10
-            .d-flex.flex-column.ml-auto
+            .d-flex.ml-2.flex-wrap
+              h2.text-info.w-100 UX дизайн форума ТРОН
+              .d-flex.chat-card__chat-author
+                .chat-card__pic.rounded-circle.overflow-hidden(href="#")
+                  img(src="img/userpic.jpg" width="25" height="25")
+                p.chat-card__word-author.mr-2.font-size-12 Автор
+                .chat-card__author-info.mr-4.font-size-14
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+              .d-flex.chat-card__last-message
+                p.mr-2.font-size-12 Последнее
+                .d-block.mr-2.font-size-14
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+            .chat-card__new-messages.d-flex.flex-column.ml-auto
               table.content__table.table.table-borderless
-                tr
+                tr.content__first-tr
                   td
                     span.d-block.font-size-20.font-weight-bold 3434
-                  td
+                  td.content__word-messages
                     span.d-block.font-size-12 Сообщений
-                tr
-                  td.content__table-left
+                tr.chat-card__new-messages-count
+                  td.chat-card__table-left
                     span.mr1.font-size-20.text-danger.font-weight-bolder +1
-                  td.content__table__right
+                  td.chat-card__table-right.chat__card--word-new
                     span.text-danger.font-size-12 Новое
+              button.btn.btn-underline.mt-auto.ml-auto Следить
+
+
+          a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
+            .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
+              img(src="img/userpic.jpg" alt="Аватарка пользователя")
+            .d-flex.ml-2.flex-wrap
+              h2.text-info.w-100 UX дизайн форума ТРОН
+              .d-flex.chat-card__chat-author
+                .chat-card__pic.rounded-circle.overflow-hidden(href="#")
+                  img(src="img/userpic.jpg" width="25" height="25")
+                p.chat-card__word-author.mr-2.font-size-12 Автор
+                .chat-card__author-info.mr-4.font-size-14
+
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+              .d-flex.chat-card__last-message
+                p.mr-2.font-size-12 Последнее
+                .d-block.mr-2.font-size-14
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+            .chat-card__new-messages.d-flex.flex-column.ml-auto
+              table.content__table.table.table-borderless
+                tr.content__first-tr
+                  td
+                    span.d-block.font-size-20.font-weight-bold 3434
+                  td.content__word-messages
+                    span.d-block.font-size-12 Сообщений
+                tr.chat-card__new-messages-count
+                  td.chat-card__table-left
+                    span.mr1.font-size-20.text-danger.font-weight-bolder +1
+                  td.chat-card__table-right.chat__card--word-new
+                    span.text-danger.font-size-12 Новое
+              button.btn.btn-underline.mt-auto.ml-auto Следить
+

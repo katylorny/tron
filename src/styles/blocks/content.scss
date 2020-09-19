@@ -1,3 +1,47 @@
+
+
+.content__chat {
+  background: $white-opacity;
+  color: #474747;
+  padding: 7px 21px 12px 30px;
+
+  @media (max-width: $tablet-width) {
+    background: white;
+  }
+
+  &:hover {
+    background: white;
+    text-decoration: none;
+    color: #474747;
+  }
+
+  &:focus {
+    background: $white-opacity;
+    box-shadow: 0 0 1px 2px rgba(82, 141, 255, 1) !important;
+  }
+
+
+}
+
+.content__table {
+  position: relative;
+
+  tbody {
+
+    @media (max-width: $tablet-width) {
+      display: flex;
+      padding-top: 20px;
+      position: relative;
+    }
+  }
+
+}
+
+.content__table td {
+  padding: 0 5px;
+  vertical-align: middle;
+}
+
 .content__tabs {
   width: 50%;
   margin-left: auto;
@@ -10,5 +54,12 @@
     width: auto;
     margin-left: 22px;
     margin-right: 22px;
+  }
+}
+
+.content__first-tr {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
   }
 }
