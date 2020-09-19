@@ -12,7 +12,6 @@ $(document).ready(() => {
 })
 
 $(`#modalNotifications`).modal({
-    backdrop: false,
     show: false
 })
 
@@ -25,21 +24,13 @@ $(`#modalUser`).modal({
 // })
 
 $(`#modalUserMenu`).modal({
-    backdrop: false,
     show: false
 })
 
 $(`#modalUserEdit`).modal({
-    backdrop: false,
     show: false
 })
 
 $(`#modalNotPaid`).modal({})
-
-$(`div[class^='modal']`).on(`shown.bs.modal`, (e) => {
-    if (e.target.dataset.backdropTransparent === undefined) {
-        $(`.modal-backdrop`).css(`background-color`, `#000`)
-    }
-})
 
 $(`#modalCheckData`).modal({})
