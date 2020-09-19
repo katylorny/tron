@@ -1,0 +1,19 @@
+extends common/layout
+
+block header
+  include common/header-small
+
+block content
+  main.main.container
+    .password.email-change.white-window.align-items-center.mt-3.mb-4.auth-window
+      h2.email-change__title Сменить почту
+      p.font-size-12 Можно использовать буквы A-Z, a-z и цифры 0-9
+      .password__field.d-flex.align-items-center
+        label(for="new-email").auth__label Новая почта
+        input#new-email.input-underline.auth__input(type="email" name="new-email" placeholder="Новая почта")
+      .password__field.d-flex.align-items-center
+        label(for="old-password").auth__label Текущий пароль
+        input#old-password.input-underline.auth__input.password-change__new(type="password" name="old-password" placeholder="Текущий пароль")
+
+      button.btn.btn-primary.auth__button.email-change__submit(type="submit") Сменить
+      button.btn.btn-underline.w-auto Отменить
