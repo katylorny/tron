@@ -76,3 +76,9 @@
     flex-direction: column;
   }
 }
+
+.content__tabs--not-paid {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}

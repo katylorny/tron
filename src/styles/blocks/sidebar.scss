@@ -17,6 +17,12 @@
   }
 }
 
+.sidebar--not-paid {
+  @media (max-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
+}
+
 .sidebar__social {
     margin-right: 15px;
 }
@@ -152,5 +158,40 @@
 .sidebar__exit-warning {
   @media (max-width: $desktop-width) {
     display: none;
+  }
+}
+
+.sidebar__subscription--not-paid {
+  padding-left: 27px;
+  padding-right: 34px;
+
+  @media (max-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.sidebar__not-paid-message {
+  @media (max-width: $desktop-width) {
+    text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 330px;
+  }
+}
+
+.sidebar__pay-button {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    color: white;
+    background-color: #053694;
+    border-radius: 0 0 5px 5px;
+    padding: 13px;
+    text-align: center;
   }
 }
