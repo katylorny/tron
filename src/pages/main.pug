@@ -48,7 +48,7 @@ block content
           a.btn-underline.d-block Продлить
 
       .content.right-column
-        ul.content__tabs.nav.nav-tabs.mr-3.mb-4
+        ul.content__tabs.nav.nav-tabs.mr-3
           li.nav-item
             a.nav-link.active.px-0(href="#") Популярное
           li.nav-item
@@ -60,17 +60,17 @@ block content
           a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
             .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
               img(src="img/userpic.jpg" alt="Аватарка пользователя")
-            .d-flex.ml-2.flex-wrap
-              h2.text-info.w-100 UX дизайн форума ТРОН
+            .chat-card__center.d-flex.flex-wrap
+              h2.chat-card__title.text-info.w-100 UX дизайн форума ТРОН
               .d-flex.chat-card__chat-author
-                .chat-card__pic.rounded-circle.overflow-hidden(href="#")
+                .chat-card__pic.rounded-circle.overflow-hidden
                   img(src="img/userpic.jpg" width="25" height="25")
                 p.chat-card__word-author.mr-2.font-size-12 Автор
                 .chat-card__author-info.mr-4.font-size-14
                   p.mb-0 Константин Двугрошев
                   p.mb-0 13.03.2020 15:10
               .d-flex.chat-card__last-message
-                p.mr-2.font-size-12 Последнее
+                p.chat-card__word-last.mr-2.font-size-12 Последнее
                 .d-block.mr-2.font-size-14
                   p.mb-0 Константин Двугрошев
                   p.mb-0 13.03.2020 15:10
@@ -91,49 +91,17 @@ block content
           a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
             .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
               img(src="img/userpic.jpg" alt="Аватарка пользователя")
-            .d-flex.ml-2.flex-wrap
-              h2.text-info.w-100 UX дизайн форума ТРОН
+            .chat-card__center.d-flex.flex-wrap
+              h2.chat-card__title.text-info.w-100 UX дизайн форума ТРОН
               .d-flex.chat-card__chat-author
-                .chat-card__pic.rounded-circle.overflow-hidden(href="#")
+                .chat-card__pic.rounded-circle.overflow-hidden
                   img(src="img/userpic.jpg" width="25" height="25")
                 p.chat-card__word-author.mr-2.font-size-12 Автор
                 .chat-card__author-info.mr-4.font-size-14
                   p.mb-0 Константин Двугрошев
                   p.mb-0 13.03.2020 15:10
               .d-flex.chat-card__last-message
-                p.mr-2.font-size-12 Последнее
-                .d-block.mr-2.font-size-14
-                  p.mb-0 Константин Двугрошев
-                  p.mb-0 13.03.2020 15:10
-            .chat-card__new-messages.d-flex.flex-column.ml-auto
-              table.content__table.table.table-borderless
-                tr.content__first-tr
-                  td
-                    span.d-block.font-size-20.font-weight-bold 3434
-                  td.content__word-messages
-                    span.d-block.font-size-12 Сообщений
-                tr.chat-card__new-messages-count
-                  td.chat-card__table-left
-                    span.mr1.font-size-20.text-danger.font-weight-bolder +1
-                  td.chat-card__table-right.chat__card--word-new
-                    span.text-danger.font-size-12 Новое
-              button.btn.btn-underline.mt-auto.ml-auto Следить
-
-
-          a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
-            .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
-              img(src="img/userpic.jpg" alt="Аватарка пользователя")
-            .d-flex.ml-2.flex-wrap
-              h2.text-info.w-100 UX дизайн форума ТРОН
-              .d-flex.chat-card__chat-author
-                .chat-card__pic.rounded-circle.overflow-hidden(href="#")
-                  img(src="img/userpic.jpg" width="25" height="25")
-                p.chat-card__word-author.mr-2.font-size-12 Автор
-                .chat-card__author-info.mr-4.font-size-14
-                  p.mb-0 Константин Двугрошев
-                  p.mb-0 13.03.2020 15:10
-              .d-flex.chat-card__last-message
-                p.mr-2.font-size-12 Последнее
+                p.chat-card__word-last.mr-2.font-size-12 Последнее
                 .d-block.mr-2.font-size-14
                   p.mb-0 Константин Двугрошев
                   p.mb-0 13.03.2020 15:10
@@ -155,10 +123,42 @@ block content
           a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
             .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
               img(src="img/userpic.jpg" alt="Аватарка пользователя")
-            .d-flex.ml-2.flex-wrap
-              h2.text-info.w-100 UX дизайн форума ТРОН
+            .chat-card__center.d-flex.flex-wrap
+              h2.chat-card__title.text-info.w-100 UX дизайн форума ТРОН
               .d-flex.chat-card__chat-author
-                .chat-card__pic.rounded-circle.overflow-hidden(href="#")
+                .chat-card__pic.rounded-circle.overflow-hidden
+                  img(src="img/userpic.jpg" width="25" height="25")
+                p.chat-card__word-author.mr-2.font-size-12 Автор
+                .chat-card__author-info.mr-4.font-size-14
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+              .d-flex.chat-card__last-message
+                p.chat-card__word-last.mr-2.font-size-12 Последнее
+                .d-block.mr-2.font-size-14
+                  p.mb-0 Константин Двугрошев
+                  p.mb-0 13.03.2020 15:10
+            .chat-card__new-messages.d-flex.flex-column.ml-auto
+              table.content__table.table.table-borderless
+                tr.content__first-tr
+                  td
+                    span.d-block.font-size-20.font-weight-bold 3434
+                  td.content__word-messages
+                    span.d-block.font-size-12 Сообщений
+                tr.chat-card__new-messages-count
+                  td.chat-card__table-left
+                    span.mr1.font-size-20.text-danger.font-weight-bolder +1
+                  td.chat-card__table-right.chat__card--word-new
+                    span.text-danger.font-size-12 Новое
+              button.btn.btn-underline.mt-auto.ml-auto Следить
+
+
+          a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
+            .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
+              img(src="img/userpic.jpg" alt="Аватарка пользователя")
+            .chat-card__center.d-flex.flex-wrap
+              h2.chat-card__title.text-info.w-100 UX дизайн форума ТРОН
+              .d-flex.chat-card__chat-author
+                .chat-card__pic.rounded-circle.overflow-hidden
                   img(src="img/userpic.jpg" width="25" height="25")
                 p.chat-card__word-author.mr-2.font-size-12 Автор
                 .chat-card__author-info.mr-4.font-size-14
@@ -166,7 +166,7 @@ block content
                   p.mb-0 Константин Двугрошев
                   p.mb-0 13.03.2020 15:10
               .d-flex.chat-card__last-message
-                p.mr-2.font-size-12 Последнее
+                p.chat-card__word-last.mr-2.font-size-12 Последнее
                 .d-block.mr-2.font-size-14
                   p.mb-0 Константин Двугрошев
                   p.mb-0 13.03.2020 15:10

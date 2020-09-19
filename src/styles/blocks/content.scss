@@ -5,9 +5,14 @@
   color: #474747;
   padding: 7px 21px 12px 30px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
+    padding-left: 16px;
     background: white;
   }
+
+  //@media (max-width: $tablet-width) {
+  //
+  //}
 
   &:hover {
     background: white;
@@ -25,6 +30,10 @@
 
 .content__table {
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 3px;
+  }
 
   tbody {
 
@@ -45,15 +54,19 @@
 .content__tabs {
   width: 50%;
   margin-left: auto;
+  align-items: center;
+  margin-bottom: 20px;
 
   @media (max-width: $desktop-width) {
-
+    margin-bottom: 14px;
+    width: 46%;
   }
 
   @media (max-width: $tablet-width) {
     width: auto;
     margin-left: 22px;
     margin-right: 22px;
+    margin-bottom: 23px;
   }
 }
 

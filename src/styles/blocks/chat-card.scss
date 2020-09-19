@@ -1,6 +1,6 @@
 .chat-card {
   @media (max-width: $tablet-width) {
-    padding: 10px 23px 27px 22px;
+    padding: 10px 23px 4px 22px;
     flex-direction: column;
   }
 }
@@ -39,8 +39,19 @@
 }
 
 .chat-card__word-author {
+
+  margin-top: 2px;
+
   @media (max-width: $tablet-width) {
     display: none;
+  }
+}
+
+.chat-card__word-last {
+  margin-top: 2px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 7px;
   }
 }
 
@@ -52,12 +63,14 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 12px;
   }
 }
 
 .chat-card__new-messages {
   @media (max-width: $tablet-width) {
-    margin-top: -63px;
+    margin-top: -67px;
   }
 }
 
@@ -106,5 +119,30 @@
 
   @media (max-width: $tablet-width) {
     display: block;
+  }
+}
+
+.chat-card__title {
+  font-size: 20px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.chat-card__center {
+  margin-left: 5px;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 22px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    margin-left: 0;
   }
 }

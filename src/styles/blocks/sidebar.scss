@@ -10,6 +10,7 @@
     display: flex;
     margin: 0;
     overflow: hidden;
+    //align-items: flex-end;
      a {
        white-space: nowrap;
      }
@@ -56,6 +57,7 @@
     flex-wrap: nowrap;
     padding-left: 22px;
     padding-right: 22px;
+    margin-bottom: 8px;
   }
 
   h2 {
@@ -74,8 +76,7 @@
   @media (max-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: nowrap;
-
-    padding: 0;
+    padding: 23px 0 0;
   }
 }
 
@@ -94,6 +95,14 @@
 
 .sidebar__my-themes {
   padding: 28px 24px 26px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+
+  @media (max-width: $desktop-width) {
+   background: transparent;
+    box-shadow: none;
+    margin-left: auto;
+  }
 }
 
 .sidebar__info {
@@ -101,15 +110,15 @@
   box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
   display: flex;
   flex-direction: column;
+  padding: 26px 24px 20px;
 
   @media (max-width: $desktop-width) {
     box-shadow: none;
     background: transparent;
     flex-direction: row;
     margin: 0;
-    padding: 0;
     flex-wrap: nowrap;
-
+    padding: 23px 0 0;
   }
 }
 
@@ -134,8 +143,14 @@
 }
 
 .sidebar__back-button {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-left: 20px;
     margin-bottom: 30px;
+  }
+}
+
+.sidebar__exit-warning {
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }

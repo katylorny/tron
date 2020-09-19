@@ -6,10 +6,10 @@
     width: 435px;
     margin: 0;
     min-height: calc(100vh - 70px);
+    background: white;
 
     @media (max-width: $tablet-width) {
       width: 100%;
-
     }
   }
 
