@@ -1,6 +1,6 @@
 import $ from 'jquery'
-import "popper.js"
-import "bootstrap"
+import 'popper.js'
+import 'bootstrap'
 //
 // $(function () {
 //     $(`[data-toggle="popover"]`).popover()
@@ -12,7 +12,6 @@ $(document).ready(() => {
 })
 
 $(`#modalNotifications`).modal({
-    backdrop: false,
     show: false
 })
 
@@ -25,17 +24,13 @@ $(`#modalUser`).modal({
 // })
 
 $(`#modalUserMenu`).modal({
-    backdrop: false,
     show: false
 })
 
 $(`#modalUserEdit`).modal({
-    backdrop: false,
     show: false
 })
 
-$(`#modalNotPaid`).modal({
-
-})
+$(`#modalNotPaid`).modal({})
 
 $(`#modalCheckData`).modal({})

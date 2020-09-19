@@ -283,10 +283,9 @@ h2 {
 }
 
 .modal-backdrop.show {
-
-  @media (min-width: $desktop-width) {
-    opacity: 0;
-  }
+  background-color: transparent;
+  transition: all 0.2s ease;
+  opacity: 0;
 }
 
 .main__wrapper {
