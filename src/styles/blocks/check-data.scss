@@ -1,11 +1,13 @@
-.not-paid {
+.check-data {
   .modal-dialog {
     margin-top: 20vh;
+
     @media (max-width: $tablet-width) {
+      max-width: 100%;
       bottom: 0;
       position: absolute;
       margin-bottom: 0 !important;
-      max-width: 100%;
+      width: 100%;
     }
   }
 
@@ -15,18 +17,11 @@
     }
   }
   .modal-body {
-    padding: 124px 112px 99px;
+    padding: 30px 103px 59px;
 
     @media (max-width: $tablet-width) {
       padding: 50px 24px 40px;
     }
-
-    //@media (max-width: $tablet-width) {
-    //  padding: 124px 36px 40px;
-    //  position: absolute;
-    //  bottom: 0;
-    //  margin-bottom: 0;
-    //}
 
     h2 {
       margin-bottom: 20px;
@@ -34,7 +29,20 @@
   }
 }
 
-.not-paid__text {
-  margin-bottom: 40px;
-  text-align: center;
+.check-data__p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+
+  /* Некликабельный заголовок */
+
+  color: #000000;
+
+  &--grey {
+    color: #7E7E7E;
+    font-weight: normal;
+    text-align: center;
+  }
 }

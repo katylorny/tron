@@ -37,3 +37,5 @@ $(`#modalUserEdit`).modal({
 $(`#modalNotPaid`).modal({
 
 })
+
+$(`#modalCheckData`).modal({})

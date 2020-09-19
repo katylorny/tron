@@ -1,0 +1,62 @@
+extends common/layout
+
+block header
+  include common/header
+
+block content
+  main.main.container-lg.p-0.pt-1.pt-lg-5
+    .d-flex.ml-0.justify-content-between.content-wrapper
+      .sidebar.sidebar--not-paid.left-column
+        .sidebar__sections.rounded-lg
+          .d-flex.flex-column
+            h2.mb-0.border-bottom Разделы
+            ul.sidebar__sections-list.nav.border-0
+              li.sidebar__section.mb-2
+                a.text-info.disabled(href="#") Финансы
+                  span.sidebar__value 223
+              li.sidebar__section.mb-2
+                a.text-info.disabled(href="#") ПОЛО
+                  span.sidebar__value 223
+              li.sidebar__section.mb-2
+                a.text-info.disabled(href="#") ТРОН
+                  span.sidebar__value 223
+              li.sidebar__section.mb-2
+                a.text-info.disabled(href="#") Инвестиции
+                  span.sidebar__value 223
+              li.sidebar__section.mb-2
+                a.text-info.disabled(href="#") Мои темы
+                  span.sidebar__value 1
+              li.sidebar__all.pt-4
+                a.btn-underline(href="#") Все темы
+
+        .sidebar__subscription.sidebar__subscription--not-paid.bg-white.rounded-lg.shadow-sm.nav.flex-column.mt-4.pt-2
+          p.sidebar__not-paid-message.text-danger После оплаты будет доступен весь функционал
+          a.sidebar__pay-button.btn-underline.d-block Оплатить
+
+      .content.right-column
+
+
+        .content__chats
+          a.content__chat.chat-card.d-flex.rounded-lg.shadow-sm.mb-4(href="#")
+            .chat-card__avatar.rounded-circle.font-size-14ck.overflow-hidden
+              img(src="img/userpic.jpg" alt="Аватарка пользователя")
+            .chat-card__center.d-flex.flex-wrap
+              h2.chat-card__title.text-info.w-100 Доступ к форуму будет открыт после оплаты
+              p.w-100
+              button.p-0.btn.text-info Оплатить
+
+  #modalCheckData.modal.check-data.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog
+      .modal-content
+        .modal-body.check-data.d-flex.flex-column.align-items-center
+          button.btn.user__close-button(type='button', data-dismiss='modal', aria-label='Close')
+            img(src="img/icon-close-modal.svg" width="16" height="16")
+          h2.font-size-20 Проверьте личные данные
+          p.check-data__p Ваш Email
+          p.check-data__p laptevart.em@ya.ru
+          p.check-data__p Лаптев Артем
+          p.check-data__p Санкт-Петербург
+          p.check-data__p.check-data__p--grey Имя, Фамилию и город можно будет изменить в настройках аккаунта
+          button.btn.btn-primary Оплатить подписку
+
+
