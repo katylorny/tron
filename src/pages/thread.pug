@@ -15,14 +15,14 @@ block content
         .thread__main.bg-white.d-flex.flex-column
           a.thread__author-pic.d-none.d-md-block.rounded-circle.overflow-hidden(href="#")
             img(src="img/userpic.jpg")
-          .thread__head.d-flex.mb-20.align-items-end.flex-wrap.flex-md-nowrap
+          .thread__head.d-flex.mb-20.align-items-center.flex-wrap.flex-md-nowrap
             h2.thread__title.font-size-20.text-info UX дизайн ПОЛО
             button.thread__options-button.thread__options-button--tablet.btn.d-lg-none.p-0(type="button")
               img(src="img/icon-options.svg" width="19" height="4")
-            button.btn.p-0.ml-2.d-none.d-lg-block(type="button")
+            button.btn.p-0.ml-2.d-none.d-lg-block.align-self-start(type="button")
               img(src="img/icon-edit.svg" width="14" height="14")
-            button.btn.p-0.ml-1.text-info.d-none.d-lg-flex(type="button")
-              img(src="img/icon-close.svg" width="16" height="16")
+            button.btn.p-0.ml-1.text-info.d-none.d-lg-flex.align-self-start.align-items-center(type="button")
+              img(src="img/icon-close.svg" width="25" height="25")
               span.lh-16(data-toggle="modal" data-target="#modalComplaintReasons") Пожаловаться
 
             p.thread__messages.ml-auto.mb-0.lh-16

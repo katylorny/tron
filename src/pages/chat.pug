@@ -4,14 +4,14 @@ block header
   include common/header
 
 block content
-  main.main.container-lg.p-0
+  main.main.container-lg.p-0.pt-1.pt-lg-5
     .d-flex.ml-0.px-3.justify-content-between.flex-nowrap
       .left-column.chats-list
         .bg-white.rounded-lg.shadow-sm
           .list-group.chats
             .chats__search.list-group-item.rounded-0.mb-0.border-top-0.border-left-0.border-right-0.p-0
               input.input-search.form-control.form-control-plaintext.border-0(type="text" placeholder="Поиск людей")
-              button.chats__add(type="button")
+              a.chats__add.d-block(href="#")
                 img(src="img/icon-plus.svg" width="15" height="15")
             ul.chats__list.list-group-item.nav.flex-column.border-0
               li.chats__item.d-flex.align-items-center.active
@@ -33,31 +33,32 @@ block content
 
 
       .chat.right-column.d-flex.flex-column
-        .chat__messages.d-flex.flex-column.justify-content-end
-          span.chat__date.d-block.mx-auto 29 марта
-          .chat__message
-            a.chat__author-pic.chats__link.d-block.rounded-circle.overflow-hidden(href="")
-              img(src="img/userpic.jpg")
-            a.chat__author(href="#") Константин Двугрошев
-            p Привет, мне понравилась анимация на блоках,—бегущий контур
-            p Цветовая схема
-          .chat__message
-            a.chat__author-pic.chats__link.d-block.rounded-circle.overflow-hidden(href="")
-              img(src="img/userpic.jpg")
-            a.chat__author(href="#") Артем Лаптев
-            p я не люблю просто кидать - это плохо или это хорошо. но конструктивно, тут есть че раскидать. Может быть идея была и не плохой, но сверстано плохо
-          .chat__message
-            p А вот именно конструктивно и надо было.
+        .chat__wrapper
+          .chat__messages.d-flex.flex-column.justify-content-end
+            span.chat__date.d-block.mx-auto 29 марта
+            .chat__message
+              a.chat__author-pic.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+                img(src="img/userpic.jpg")
+              a.chat__author(href="#") Константин Двугрошев
+              p Привет, мне понравилась анимация на блоках,—бегущий контур
+              p Цветовая схема
+            .chat__message
+              a.chat__author-pic.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+                img(src="img/userpic.jpg")
+              a.chat__author(href="#") Артем Лаптев
+              p я не люблю просто кидать - это плохо или это хорошо. но конструктивно, тут есть че раскидать. Может быть идея была и не плохой, но сверстано плохо
+            .chat__message
+              p А вот именно конструктивно и надо было.
 
-          .chat__message
-            p А вот именно конструктивно и надо было.
-          span.chat__date.d-block.mx-auto 30 марта
-          .chat__message.chat__message--new
-            a.chat__author-pic.chats__link.d-block.rounded-circle.overflow-hidden(href="")
-              img(src="img/userpic.jpg")
-            a.chat__author(href="#") Константин Двугрошев
-            p Привет, мне понравилась анимация на блоках,—бегущий контур
-            p Цветовая схема
+            .chat__message
+              p А вот именно конструктивно и надо было.
+            span.chat__date.d-block.mx-auto 30 марта
+            .chat__message.chat__message--new
+              a.chat__author-pic.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+                img(src="img/userpic.jpg")
+              a.chat__author(href="#") Константин Двугрошев
+              p Привет, мне понравилась анимация на блоках,—бегущий контур
+              p Цветовая схема
         .chat__input
           input#add-file.sr-only(type="file" multiple)
           label.chat__add-file-button(for="add-file")

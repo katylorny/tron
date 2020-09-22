@@ -39,12 +39,12 @@
 }
 
 .chat__title {
-    position: absolute;
-    top: 0;
-    left: 0;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
     width: 100%;
     padding: 18px 24px;
-    align-items: center;
+    //align-items: center;
     background: white;
     z-index: 2;
 
@@ -57,8 +57,16 @@
 .chat__messages {
     border-bottom: 2px solid rgba(71, 71, 71, 0.1);
     //height: 100%;
-    overflow-y: auto;
-    height: calc(100vh - 135px - 94px);
+
+}
+
+.chat__wrapper {
+  overflow-y: auto;
+  height: calc(100vh - 135px - 94px);
+}
+
+.chat__wrapper--with-title {
+  height: calc(100vh - 135px - 94px - 60px);
 }
 
 .chat__message {
@@ -106,6 +114,12 @@
     position: absolute;
     top: 0;
     left: 23px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .chat__add-file-button {

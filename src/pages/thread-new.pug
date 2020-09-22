@@ -15,7 +15,7 @@ block content
           a.text-info(href="#") Мои темы
           span.text-grey.ml-10 1
 
-      .content.right-column.thread-new.bg-white.rounded.d-flex-flex-column.shadow.position-relative
+      .content.right-column.thread-new.bg-white.rounded.d-flex-flex-column.shadow.position-relative.mb-3
         h2 Название
         input#title.input-underline.w-100(type="text" placeholder="Начните вводить название..")
         p.text-light-grey.mb-30 Чтобы вам было удобно читать, пожалуйста, уместите название в одну строку
@@ -35,9 +35,14 @@ block content
             a.dropdown-item(href='#') Separated link
         h2 Прикрепите файлы
         p.text-light-grey Можно прикрепить документы и фотографии
-        input#file.sr-only(type="file" multiple)
-        label(for="file")
-          img(src="img/icon-add-file-blue.svg" width="31" height="31")
+        .thread-new__files.d-flex
+          input#file.sr-only(type="file" multiple)
+          label(for="file")
+            img(src="img/icon-add-file-blue.svg" width="31" height="31")
+          .d-flex.flex-column.ml-3
+            a.text-info(href="#") Счет на оплату.doc
+            a.text-info(href="#") Макет.pdf
+            a.text-info(href="#") Файл с безумно длинным названием, котр...
         button.thread-new__send-button.btn.btn-underline(data-toggle="modal" data-target="#modalPublished") Опубликовать
 
 
