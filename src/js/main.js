@@ -1,7 +1,8 @@
 import $ from 'jquery'
 import 'popper.js'
 import 'bootstrap'
-//
+import SimpleBar from "simplebar/dist/simplebar"
+
 // $(function () {
 //     $(`[data-toggle="popover"]`).popover()
 // })
@@ -34,3 +35,9 @@ $(`#modalUserEdit`).modal({
 $(`#modalNotPaid`).modal({})
 
 $(`#modalCheckData`).modal({})
+
+// eslint-disable-next-line no-new
+new SimpleBar($(`.listing__wrapper`)[0])
+
+// eslint-disable-next-line no-new
+new SimpleBar($(`.listing__alphabet-wrapper`)[0])

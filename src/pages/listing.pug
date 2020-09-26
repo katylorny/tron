@@ -15,38 +15,38 @@ block content
       //button.listing__back.btn.text-info Вернуться на главную
       .listing__content.d-flex.flex-column
         input.listing__search.input-underline.input-search.rounded-0(type='search', placeholder='Поиск', aria-label='Поиск')
-        ul.listing__cities.list-unstyled
-          li.listing__city.listing__city--closed
-            h2.listing__city-name Кострома
-            ul.listing__city-people.list-unstyled
-              li Сергей Юрьевич Агафонов
-              li Иван Ахметьев
-              li Kamil Singatulin
-          li.listing__city
-            h2.listing__city-name Москва
-            ul.listing__city-people.list-unstyled
-              li Сергей Юрьевич Агафонов
-              li Иван Ахметьев
-              li Kamil Singatulin
-              li Сергей Юрьевич Агафонов
-              li Сергей Юрьевич Агафонов
-              li Сергей Юрьевич Агафонов
-              li Иван Ахметьев
-              li Сергей Юрьевич Агафонов
-              li Сергей Юрьевич Агафонов
-          li.listing__city
-            h2.listing__city-name Махачкала
-            ul.listing__city-people.list-unstyled
-              li Сергей Юрьевич Агафонов
-              li Сергей Юрьевич Агафонов
-          li.listing__city.listing__city--closed
-            h2.listing__city-name Новосибирск
-            ul.listing__city-people.list-unstyled
-              li Сергей Юрьевич Агафонов
-              li Иван Ахметьев
-              li Kamil Singatulin
+        .listing__wrapper(data-simplebar)
+          ul.listing__cities.list-unstyled
+            li.listing__city.listing__city--closed
+              h2.listing__city-name Кострома
+              ul.listing__city-people.list-unstyled
+                li Сергей Юрьевич Агафонов
+                li Иван Ахметьев
+                li Kamil Singatulin
+            li.listing__city
+              h2.listing__city-name Москва
+              ul.listing__city-people.list-unstyled
+                li Сергей Юрьевич Агафонов
+                li Иван Ахметьев
+                li Сергей Юрьевич Агафонов
+                li Сергей Юрьевич Агафонов
+                li Сергей Юрьевич Агафонов
+                li Иван Ахметьев
+                li Сергей Юрьевич Агафонов
+                li Сергей Юрьевич Агафонов
+            li.listing__city
+              h2.listing__city-name Махачкала
+              ul.listing__city-people.list-unstyled
+                li Сергей Юрьевич Агафонов
+                li Сергей Юрьевич Агафонов
+            li.listing__city.listing__city--closed
+              h2.listing__city-name Новосибирск
+              ul.listing__city-people.list-unstyled
+                li Сергей Юрьевич Агафонов
+                li Иван Ахметьев
 
       .listing__alphabet.d-flex.flex-column
-        ul.list-unstyled.d-flex.flex-column
-          each val, index in ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц']
-            +alphabet(val)
+        .listing__alphabet-wrapper(data-simplebar)
+          ul.list-unstyled.d-flex.flex-column
+            each val, index in ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц']
+              +alphabet(val)
