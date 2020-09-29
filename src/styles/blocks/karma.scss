@@ -7,13 +7,20 @@
 }
 
 .karma__number {
-  width: 40px;
+  min-width: 40px;
   height: 23px;
   display: block;
   background: #EAFBF0;
   color: #16952D;
   text-align: center;
   margin: 0 8px;
+}
+
+.karma--negative {
+  .karma__number {
+    background: #F9EFEF;
+    color: $red;
+  }
 }
 
 .karma__top {
@@ -23,4 +30,5 @@
 .karma__down {
   background: url("../img/icon-top-arrow.svg") no-repeat;
   transform: rotate(180deg);
+  margin-top: 3px;
 }

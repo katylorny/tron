@@ -1,6 +1,6 @@
 .chat {
-    position: relative;
-    box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+  position: relative;
+  box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
   background: white;
 
   @media (max-width: $desktop-width) {
@@ -15,48 +15,50 @@
 }
 
 .chat__input {
-    position: relative;
+  position: relative;
 
-    textarea {
-        width: 100%;
-        resize: none;
-        height: 87px;
-        border: none;
-        padding: 20px 89px;
+  textarea {
+    width: 100%;
+    resize: none;
+    height: 87px;
+    border: none;
+    padding: 20px 89px;
+    font-family: $helvetica-neue;
+    font-size: 16px;
 
-        &:focus {
-            outline: none;
-        }
-
-        &::placeholder {
-            font-family: $helvetica-neue;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 19px;
-            color: #7e7e7e;
-        }
+    &:focus {
+      outline: none;
     }
+
+    &::placeholder {
+      font-family: $helvetica-neue;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #7e7e7e;
+    }
+  }
 }
 
 .chat__title {
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-    width: 100%;
-    padding: 18px 24px;
-    //align-items: center;
-    background: white;
-    z-index: 2;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  width: 100%;
+  padding: 18px 24px;
+  //align-items: center;
+  background: white;
+  z-index: 2;
 
-    h2 {
-        margin-right: 10px;
-        margin-bottom: 0;
-    }
+  h2 {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .chat__messages {
-    border-bottom: 2px solid rgba(71, 71, 71, 0.1);
-    //height: 100%;
+  border-bottom: 2px solid rgba(71, 71, 71, 0.1);
+  //height: 100%;
 
 }
 
@@ -70,39 +72,39 @@
 }
 
 .chat__message {
-    padding-left: 89px;
-    padding-right: 20px;
-    position: relative;
-    padding-bottom: 20px;
+  padding-left: 89px;
+  padding-right: 20px;
+  position: relative;
+  padding-bottom: 20px;
 
   @media (max-width: $tablet-width) {
     padding-left: 22px;
   }
 
-    p {
-        margin-bottom: 0;
-    }
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .chat__message--new {
-    background: #fef4f5;
+  background: #fef4f5;
 }
 
 .chat__date {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #7e7e7e;
-    margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7e7e7e;
+  margin-bottom: 20px;
 }
 
 .chat__author {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #053694;
-    margin-bottom: 16px;
-    display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #053694;
+  margin-bottom: 16px;
+  display: block;
 
   @media (max-width: $tablet-width) {
     padding-left: 36px;
@@ -111,9 +113,9 @@
 }
 
 .chat__author-pic {
-    position: absolute;
-    top: 0;
-    left: 23px;
+  position: absolute;
+  top: 0;
+  left: 23px;
 
   img {
     width: 100%;
@@ -123,69 +125,69 @@
 }
 
 .chat__add-file-button {
-    width: 17px;
-    height: 17px;
-    border: none;
-    background: transparent;
-    position: absolute;
-    top: 18px;
-    left: 40px;
-    cursor: pointer;
-    padding: 0;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 18px;
+  left: 40px;
+  cursor: pointer;
+  padding: 0;
 }
 
 .chat__send-button {
-    position: absolute;
-    bottom: 0;
-    right: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
 }
 
 .chat__back-button {
-    padding: 19px 24px;
+  padding: 19px 24px;
 
-    img {
-        margin-right: 10px;
-    }
+  img {
+    margin-right: 10px;
+  }
 }
 
 .chat__chat-name {
-    padding: 10px 24px;
+  padding: 10px 24px;
 }
 
 .chat__participants {
-    padding-left: 24px;
+  padding-left: 24px;
 }
 
 .chat__add-new {
-    padding: 19px 24px;
+  padding: 19px 24px;
 
-    p {
-        line-height: 18px;
-    }
+  p {
+    line-height: 18px;
+  }
 
-    img {
-        margin-right: 10px;
-    }
+  img {
+    margin-right: 10px;
+  }
 }
 
 .chat__participant {
-    padding: 11px 24px;
+  padding: 11px 24px;
 
-    p {
-        line-height: 17px;
-        width: 60%;
-        display: flex;
-        align-items: center;
-    }
+  p {
+    line-height: 17px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .chat__admin {
-    margin-left: 10px;
-    font-size: 14px;
-    line-height: 17px;
-    color: #7e7e7e;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7e7e7e;
 }
 
 .chat__add-new-chat {
-    margin-top: 169px;
+  margin-top: 169px;
 }

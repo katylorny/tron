@@ -34,4 +34,8 @@
     &:focus {
         outline: none;
     }
+
+  @media (max-width: $desktop-width) {
+    margin-left: auto;
+  }
 }

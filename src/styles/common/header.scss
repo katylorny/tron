@@ -1,13 +1,23 @@
 @import "../mixins/media";
 
 .header {
+  background: #f9f9f9;
+  transform: translateX(-50%);
+  margin-left: 50%;
+
+  //@media (max-width: $tablet-width) {
+    position: fixed;
+    z-index: 10;
+
+    .navbar {
+      padding-bottom: 0;
+    }
+  //}
+
   .left-column {
     //margin-right: 3%;
   }
 
-  @media (max-width: $tablet-width) {
-    //background: white;
-  }
 }
 
 .header__nav {

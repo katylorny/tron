@@ -3,12 +3,29 @@
   padding-bottom: 0;
   margin-bottom: 33px;
 
+
   .input-underline {
     width: 275px;
   }
 
   @media(max-width: $desktop-width) {
     //margin-top: 114px;
+  }
+}
+
+.registration--mail-confirmation {
+  padding-top: 84px;
+
+  .btn-underline--only-hover {
+    @media (max-width: $desktop-width) {
+      height: 55px;
+      background: $btn-blue;
+      width: 100%;
+      border-radius: 5px;
+      color: white;
+      max-width: 300px;
+      margin-top: 45px;
+    }
   }
 }
 
