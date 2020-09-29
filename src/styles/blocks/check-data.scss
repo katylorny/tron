@@ -1,48 +1,51 @@
 .check-data {
-  .modal-dialog {
-    margin-top: 20vh;
+    .modal-dialog {
+        margin-top: 20vh;
 
-    @media (max-width: $tablet-width) {
-      max-width: 100%;
-      bottom: 0;
-      position: absolute;
-      margin-bottom: 0 !important;
-      width: 100%;
-    }
-  }
-
-  .modal-content {
-    @media (max-width: $tablet-width) {
-
-    }
-  }
-  .modal-body {
-    padding: 30px 103px 59px;
-
-    @media (max-width: $tablet-width) {
-      padding: 50px 24px 40px;
+        @media (max-width: $tablet-width) {
+            max-width: 100%;
+            bottom: 0;
+            position: absolute;
+            margin-bottom: 0 !important;
+            width: 100%;
+        }
     }
 
-    h2 {
-      margin-bottom: 20px;
+    .modal-content {
+
+        @media (max-width: $tablet-width) {
+
+        }
     }
-  }
+
+    .modal-body {
+        padding: 30px 103px 59px;
+
+        @media (max-width: $tablet-width) {
+            padding: 50px 24px 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .check-data__p {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height */
 
 
-  /* Некликабельный заголовок */
+    /* Некликабельный заголовок */
 
-  color: #000000;
+    color: #000000;
 
-  &--grey {
-    color: #7E7E7E;
-    font-weight: normal;
-    text-align: center;
-  }
+    &--grey {
+        color: #7e7e7e;
+        font-weight: normal;
+        text-align: center;
+    }
 }

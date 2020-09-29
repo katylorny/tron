@@ -1,22 +1,23 @@
 #modalNotPaid,
 #modalCheckData {
-  background: rgba(#000, 0.5);
+    background: rgba(#000000, 0.5);
 }
 
 #modalPublished,
 #modalUser,
 #modalComplaintReasons {
-  .modal-dialog {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media(max-width: $tablet-width) {
-    background: rgba(#000, 0.5);
-  }
+    .modal-dialog {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: $tablet-width) {
+        background: rgba(#000000, 0.5);
+    }
 }
 
 #modalUser.show {
-  top: unset;
-  display: flex !important;
-  align-items: center;
+    top: unset;
+    display: flex !important;
+    align-items: center;
 }

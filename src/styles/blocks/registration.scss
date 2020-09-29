@@ -1,83 +1,84 @@
 .registration {
-  margin-top: 43px;
-  padding-bottom: 0;
-  margin-bottom: 33px;
+    margin-top: 43px;
+    padding-bottom: 0;
+    margin-bottom: 33px;
 
 
-  .input-underline {
-    width: 275px;
-  }
+    .input-underline {
+        width: 275px;
+    }
 
-  @media(max-width: $desktop-width) {
-    //margin-top: 114px;
-  }
+    @media (max-width: $desktop-width) {
+        //margin-top: 114px;
+    }
 }
 
 .registration--mail-confirmation {
-  padding-top: 84px;
+    padding-top: 84px;
 
-  .btn-underline--only-hover {
-    @media (max-width: $desktop-width) {
-      height: 55px;
-      background: $btn-blue;
-      width: 100%;
-      border-radius: 5px;
-      color: white;
-      max-width: 300px;
-      margin-top: 45px;
+    .btn-underline--only-hover {
+
+        @media (max-width: $desktop-width) {
+            height: 55px;
+            background: $btn-blue;
+            width: 100%;
+            border-radius: 5px;
+            color: white;
+            max-width: 300px;
+            margin-top: 45px;
+        }
     }
-  }
 }
 
 .registration__back-button {
-  left: -70px;
-  top: 15px;
+    left: -70px;
+    top: 15px;
 }
 
 .registration__fields {
-  margin-top: 38px;
-  max-width: 413px;
-  width: 100%;
+    margin-top: 38px;
+    max-width: 413px;
+    width: 100%;
 }
 
 .field.registration__field--field {
-  margin-top: 11px;
+    margin-top: 11px;
 }
 
 .registration__or {
-  margin-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 .registration__sing-up {
-  font-weight: 500;
-  margin-bottom: 4px;
+    font-weight: 500;
+    margin-bottom: 4px;
 }
 
 .registration__danger {
-  font-size: 16px;
-  line-height: 1;
+    font-size: 16px;
+    line-height: 1;
 
-  @media(max-width: $tablet-width) {
-    margin-bottom: 39px !important;
-  }
+    @media (max-width: $tablet-width) {
+        margin-bottom: 39px !important;
+    }
 }
 
 .registration__forget {
-  font-weight: 500;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .footer__link {
-  margin-right: 55px;
-  font-size: 16px;
-  color: #053694;
+    margin-right: 55px;
+    font-size: 16px;
+    color: #053694;
 
-  &:last-child {
-    margin-right: 0;
-  }
+    &:last-child {
+        margin-right: 0;
+    }
 
-  @media(max-width: $tablet-width) {
-    margin-right: 0;
-    margin-bottom: 9px;
-  }
+    @media (max-width: $tablet-width) {
+        margin-right: 0;
+        margin-bottom: 9px;
+    }
 }

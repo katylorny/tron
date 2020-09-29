@@ -1,23 +1,21 @@
 .email-change {
-  padding-bottom: 0;
-  min-height: 400px;
+    padding-bottom: 0;
+    min-height: 400px;
 
-  label {
-    width: 123px;
-    margin-right: 9px;
-  }
-
-  .password__field {
-    padding-right: 132px;
-
-    @media (max-width: $tablet-width) {
-      padding-right: 0;
+    label {
+        width: 123px;
+        margin-right: 9px;
     }
 
-  }
+    .password__field {
+        padding-right: 132px;
 
+        @media (max-width: $tablet-width) {
+            padding-right: 0;
+        }
+    }
 }
 
 .email-change__submit {
-  margin-bottom: 92px;
+    margin-bottom: 92px;
 }

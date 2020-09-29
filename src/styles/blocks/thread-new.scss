@@ -1,29 +1,29 @@
 .thread-new {
-  padding: 20px 156px 45px 115px;
+    padding: 20px 156px 45px 115px;
 
-  @media (max-width: $tablet-width) {
-    padding: 10px 22px 70px 23px;
-    margin-bottom: 20px;
-  }
-
-  input {
-    max-width: 100%;
-    padding-left: 0;
-
-    &::placeholder {
-      font-size: 18px;
-      color: #363636;
+    @media (max-width: $tablet-width) {
+        padding: 10px 22px 70px 23px;
+        margin-bottom: 20px;
     }
-  }
+
+    input {
+        max-width: 100%;
+        padding-left: 0;
+
+        &::placeholder {
+            font-size: 18px;
+            color: #363636;
+        }
+    }
 }
 
 .thread-new__section {
-  min-width: 194px;
-  text-align: left;
+    min-width: 194px;
+    text-align: left;
 }
 
 .thread-new__send-button {
-  position: absolute;
-  right: 10px;
-  bottom: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
 }

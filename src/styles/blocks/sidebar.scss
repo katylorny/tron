@@ -3,24 +3,27 @@
     //min-width: 270px;
     //box-shadow: 0px 10px 30px rgba(71, 71, 71, 0.1);
     min-height: calc(100vh - 135px);
+    position: fixed;
 
-  @media (max-width: $desktop-width) {
-    width: 100%;
-    min-height: auto;
-    display: flex;
-    margin: 0;
-    overflow: hidden;
-    //align-items: flex-end;
-     a {
-       white-space: nowrap;
-     }
-  }
+    @media (max-width: $desktop-width) {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        margin: 0;
+        overflow: hidden;
+        //align-items: flex-end;
+        a {
+            white-space: nowrap;
+        }
+    }
 }
 
 .sidebar--not-paid {
-  @media (max-width: $desktop-width) {
-    flex-wrap: wrap;
-  }
+
+    @media (max-width: $desktop-width) {
+        flex-wrap: wrap;
+    }
 }
 
 .sidebar__social {
@@ -54,145 +57,153 @@
     display: flex;
     flex-direction: column;
     background: white;
-  box-shadow: 0px 10px 30px rgba(71, 71, 71, 0.1);
-  margin-bottom: 20px;
-
-  @media (max-width: $desktop-width) {
-    background: transparent;
-    box-shadow: none;
-    flex-wrap: nowrap;
-    padding-left: 22px;
-    padding-right: 22px;
-    margin-bottom: 8px;
-  }
-
-  h2 {
-    padding: 21px 24px 20px;
+    box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+    margin-bottom: 20px;
 
     @media (max-width: $desktop-width) {
-      display: none;
+        background: transparent;
+        box-shadow: none;
+        flex-wrap: nowrap;
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-bottom: 8px;
     }
-  }
+
+    h2 {
+        padding: 21px 24px 20px;
+
+        @media (max-width: $desktop-width) {
+            display: none;
+        }
+    }
 }
 
 .sidebar__sections-list {
-  padding: 19px 24px 3px;
-  flex-direction: column;
+    padding: 19px 24px 3px;
+    flex-direction: column;
 
-  @media (max-width: $desktop-width) {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 23px 0 0;
-  }
+    @media (max-width: $desktop-width) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 23px 0 0;
+    }
 }
 
 .sidebar__section {
-  @media (max-width: $desktop-width) {
-    margin-right: 38px;
-    margin-bottom: 0;
-  }
+
+    @media (max-width: $desktop-width) {
+        margin-right: 38px;
+        margin-bottom: 0;
+    }
 }
 
 .sidebar__all {
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
+
+    @media (max-width: $desktop-width) {
+        display: none;
+    }
 }
 
 .sidebar__my-themes {
-  padding: 28px 24px 26px;
-  background: white;
-  box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+    padding: 28px 24px 26px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
 
-  @media (max-width: $desktop-width) {
-   background: transparent;
-    box-shadow: none;
-    margin-left: auto;
-  }
+    @media (max-width: $desktop-width) {
+        background: transparent;
+        box-shadow: none;
+        margin-left: auto;
+    }
 }
 
 .sidebar__info {
-  background: white;
-  box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
-  display: flex;
-  flex-direction: column;
-  padding: 26px 24px 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 26px 24px 20px;
 
-  @media (max-width: $desktop-width) {
-    box-shadow: none;
-    background: transparent;
-    flex-direction: row;
-    margin: 0;
-    flex-wrap: nowrap;
-    padding: 23px 0 0;
-  }
+    @media (max-width: $desktop-width) {
+        box-shadow: none;
+        background: transparent;
+        flex-direction: row;
+        margin: 0;
+        flex-wrap: nowrap;
+        padding: 23px 0 0;
+    }
 }
 
 .sidebar__18 {
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
+
+    @media (max-width: $desktop-width) {
+        display: none;
+    }
 }
 
 .sidebar__social {
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
+
+    @media (max-width: $desktop-width) {
+        display: none;
+    }
 }
 
 .sidebar__subscription {
-  display: flex;
-  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.1);
+    display: flex;
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.1);
 
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
+    @media (max-width: $desktop-width) {
+        display: none;
+    }
 }
 
 .sidebar__back-button {
-  @media (max-width: $desktop-width) {
-    margin-left: 20px;
-    margin-bottom: 30px;
-  }
+
+    @media (max-width: $desktop-width) {
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 .sidebar__exit-warning {
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
+
+    @media (max-width: $desktop-width) {
+        display: none;
+    }
 }
 
 .sidebar__subscription--not-paid {
-  padding-left: 27px;
-  padding-right: 34px;
+    padding-left: 27px;
+    padding-right: 34px;
 
-  @media (max-width: $desktop-width) {
-    display: flex;
-    margin-bottom: 20px;
-    width: 100%;
-    align-items: center;
-    padding-left: 0;
-    padding-right: 0;
-  }
+    @media (max-width: $desktop-width) {
+        display: flex;
+        margin-bottom: 20px;
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .sidebar__not-paid-message {
-  @media (max-width: $desktop-width) {
-    text-align: center;
-  }
 
-  @media (max-width: $tablet-width) {
-    max-width: 330px;
-  }
+    @media (max-width: $desktop-width) {
+        text-align: center;
+    }
+
+    @media (max-width: $tablet-width) {
+        max-width: 330px;
+    }
 }
 
 .sidebar__pay-button {
-  @media (max-width: $tablet-width) {
-    width: 100%;
-    color: white;
-    background-color: #053694;
-    border-radius: 0 0 5px 5px;
-    padding: 13px;
-    text-align: center;
-  }
+
+    @media (max-width: $tablet-width) {
+        width: 100%;
+        color: white;
+        background-color: #053694;
+        border-radius: 0 0 5px 5px;
+        padding: 13px;
+        text-align: center;
+    }
 }

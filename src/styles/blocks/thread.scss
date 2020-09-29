@@ -83,6 +83,16 @@
 
 .thread__sort {
   width: fit-content;
+
+  .nav-link {
+    &:hover {
+      border-color: transparent;
+    }
+
+    &:focus {
+      border-color: transparent;
+    }
+  }
 }
 
 .thread__comment {

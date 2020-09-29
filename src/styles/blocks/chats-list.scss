@@ -1,12 +1,13 @@
 .chats-list {
-  @media (max-width: $desktop-width) {
-    width: auto;
-    max-width: 270px;
-    flex-grow: 1;
-  }
 
-  @media (max-width: $tablet-width) {
-    display: none;
-    max-width: 100%;
-  }
+    @media (max-width: $desktop-width) {
+        width: auto;
+        max-width: 270px;
+        flex-grow: 1;
+    }
+
+    @media (max-width: $tablet-width) {
+        display: none;
+        max-width: 100%;
+    }
 }

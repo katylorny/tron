@@ -1,19 +1,19 @@
 .modal-menu {
-  .modal-dialog {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 435px;
-    margin: 0;
-    min-height: calc(100vh - 70px);
-    background: white;
+    .modal-dialog {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 435px;
+        margin: 0;
+        min-height: calc(100vh - 70px);
+        background: white;
 
-    @media (max-width: $tablet-width) {
-      width: 100%;
+        @media (max-width: $tablet-width) {
+            width: 100%;
+        }
     }
-  }
 
-  .modal-body {
-    padding: 0;
-  }
+    .modal-body {
+        padding: 0;
+    }
 }

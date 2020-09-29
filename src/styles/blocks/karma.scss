@@ -1,34 +1,33 @@
 .karma {
-  button {
-    min-width: 18px;
-    height: 8px;
-  }
-
+    button {
+        min-width: 18px;
+        height: 8px;
+    }
 }
 
 .karma__number {
-  min-width: 40px;
-  height: 23px;
-  display: block;
-  background: #EAFBF0;
-  color: #16952D;
-  text-align: center;
-  margin: 0 8px;
+    min-width: 40px;
+    height: 23px;
+    display: block;
+    background: #eafbf0;
+    color: #16952d;
+    text-align: center;
+    margin: 0 8px;
 }
 
 .karma--negative {
-  .karma__number {
-    background: #F9EFEF;
-    color: $red;
-  }
+    .karma__number {
+        background: #f9efef;
+        color: $red;
+    }
 }
 
 .karma__top {
-  background: url("../img/icon-top-arrow.svg") no-repeat;
+    background: url("../img/icon-top-arrow.svg") no-repeat;
 }
 
 .karma__down {
-  background: url("../img/icon-top-arrow.svg") no-repeat;
-  transform: rotate(180deg);
-  margin-top: 3px;
+    background: url("../img/icon-top-arrow.svg") no-repeat;
+    transform: rotate(180deg);
+    margin-top: 3px;
 }
