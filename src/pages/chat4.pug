@@ -5,45 +5,44 @@ block header
 
 block content
   main.main.container-lg
-    .d-flex.ml-0.px-3.justify-content-between.flex-nowrap
+    .d-flex.ml-0.justify-content-between.flex-nowrap
       .left-column.chats-list
-        .bg-white.rounded-lg.shadow-sm
-          .list-group.chats.h-100
-            .chats__new-chat.list-group-item.rounded-0.mb-0.border-top-0.border-left-0.border-right-0.position-relative
-              h2.m-0 Создать беседу
-              button.btn.chats__close-button(type="button")
-                img(src="img/icon-close.svg")
-            .list-group-item.border-0
-              .d-flex.mb-2
-                img(src="img/icon-chat-pic.svg" width="55" height="55")
-                input.chats__chat-title.input-underline.ml-2.pl-0(type="text" placeholder="Название беседы")
-              .d-flex.flex-wrap.border-bottom
-                .chats__adding-user.font-size-12
-                  span Артур Коломыцын
-                  button.btn(type="button")
-                    img(src="img/icon-close.svg" width="10" height="10")
-                .chats__adding-user.font-size-12
-                  span Артур Коломыцын
-                  button.btn(type="button")
-                    img(src="img/icon-close.svg" width="10" height="10")
-                input.border-0.chats__input-name(type="text" placeholder="Введите имя")
-            ul.chats__list.list-group-item.nav.flex-column.border-0
-              li.chats__item.d-flex.align-items-center.selected
-                a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
-                  img(src="img/userpic.jpg")
-                p.font-size-14.mb-0 Иван Смирнов
+        .list-group.chats.h-100
+          .chats__new-chat.list-group-item.rounded-0.mb-0.border-top-0.border-left-0.border-right-0.position-relative
+            h2.m-0 Создать беседу
+            button.btn.chats__close-button(type="button")
+              img(src="img/icon-close.svg")
+          .list-group-item.border-0
+            .d-flex.mb-2
+              img(src="img/icon-chat-pic.svg" width="55" height="55")
+              input.chats__chat-title.input-underline.ml-2.pl-0(type="text" placeholder="Название беседы")
+            .d-flex.flex-wrap.border-bottom
+              .chats__adding-user.font-size-12
+                span Артур Коломыцын
+                button.btn(type="button")
+                  img(src="img/icon-close.svg" width="10" height="10")
+              .chats__adding-user.font-size-12
+                span Артур Коломыцын
+                button.btn(type="button")
+                  img(src="img/icon-close.svg" width="10" height="10")
+              input.border-0.chats__input-name(type="text" placeholder="Введите имя")
+          ul.chats__list.list-group-item.nav.flex-column.border-0
+            li.chats__item.d-flex.align-items-center.selected
+              a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+                img(src="img/userpic.jpg")
+              p.font-size-14.mb-0 Иван Смирнов
 
-              li.chats__item.d-flex.align-items-center
-                a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
-                  img(src="img/userpic.jpg")
-                p.font-size-14.mb-0 Артур Коломыцын
+            li.chats__item.d-flex.align-items-center
+              a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+                img(src="img/userpic.jpg")
+              p.font-size-14.mb-0 Артур Коломыцын
 
-              li.chats__item.d-flex.align-items-center.selected
-                a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
-                  img(src="img/userpic.jpg")
-                p.font-size-14.mb-0 Василий Пупкин
-            .chats__create-chat-button.list-group-item.mt-auto.text-center
-              a.text-info.ml-1(href="#") Создать беседу
+            li.chats__item.d-flex.align-items-center.selected
+              a.chats__link.d-block.rounded-circle.overflow-hidden(href="")
+                img(src="img/userpic.jpg")
+              p.font-size-14.mb-0 Василий Пупкин
+          .chats__create-chat-button.list-group-item.mt-auto.text-center
+            a.text-info.ml-1(href="#") Создать беседу
 
 
       .chat.right-column.d-flex.flex-column

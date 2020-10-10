@@ -44,3 +44,6 @@ new SimpleBar($(`.listing__alphabet-wrapper`)[0])
 
 // eslint-disable-next-line no-new
 new SimpleBar($(`.chat__wrapper`)[0])
+
+// eslint-disable-next-line no-new
+new SimpleBar($(`.chats__wrapper`)[0])
