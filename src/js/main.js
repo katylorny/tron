@@ -18,7 +18,7 @@ $(`#modalNotifications`).modal({
 
 
 $(`#modalUser`).modal({
-    show: false
+    // show: false
 })
 // $(`#modalNotifications`).on(`shown.bs.modal`, function () {
 //     $(`.modal-backdrop`).addClass(`modal-backdrop--transparent`)

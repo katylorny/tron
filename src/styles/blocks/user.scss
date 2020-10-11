@@ -5,9 +5,15 @@
         top: 20vh;
     }
 
+    .modal-header {
+      border-bottom: none;
+      box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
+      padding: 40px 16px 16px;
+    }
+
     .modal-content {
         box-shadow: 0 10px 30px rgba(71, 71, 71, 0.1);
-        padding: 20px;
+        //padding: 20px;
     }
 
     .modal-dialog {
@@ -17,6 +23,10 @@
             width: 100vw;
         }
     }
+}
+
+.user__user-header {
+  padding-left: 24px;
 }
 
 .user__close-button {
@@ -29,4 +39,40 @@
 .user__user-pic {
     width: 100px;
     height: 100px;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.user__user-name {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.user__user-position {
+  color: #363636;
+  opacity: 0.5;
+}
+
+.user__user-info {
+  padding: 24px 24px 40px 16px;
+  margin-bottom: 0;
+}
+
+.user__user-statistic {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.user__posts-count {
+  margin-right: 10px;
+  min-width: 30%;
+}
+
+.user__begin-chat {
+  font-weight: 500;
 }
