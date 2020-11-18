@@ -10,37 +10,29 @@ $(document).ready(() => {
 
     function disableSwiperOnDesktop() {
         if (window.matchMedia(`(min-width: 1024px)`).matches && tabsSwiper) {
-            tabsSwiper.destroy(true, true)
-            // eslint-disable-next-line no-console
-            console.log(`свайпер уничтожен`)
-        } else if (!tabsSwiper) {
-            // eslint-disable-next-line no-console
-            console.log(`свайпер создан`)
-            initializeSwiper()
-            // slider.changeDirection(`horizontal`)
-            // tabsSwiper = new Swiper(`.swiper-container`, {
-            //     freeMode: true,
-            //     slidesPerView: `auto`
-            // })
+            console.log(`десктоп, свайпер есть, удаляем`)
+            tabsSwiper.destroy()
+            tabsSwiper = undefined
+        } else if (!window.matchMedia(`(min-width: 1024px)`).matches && !tabsSwiper) {
+            console.log(`не десктоп, свайпера нет, создаем`)
+            tabsSwiper = new Swiper(`.swiper-container`, {
+                freeMode: true,
+                slidesPerView: `auto`
+            })
+        } else {
+            console.log(`состояние свайпера не нужно менять`)
         }
     }
 
-    function initializeSwiper() {
+    if (!window.matchMedia(`(min-width: 1024px)`).matches) {
+        console.log(`маленькая ширина, инициализируем`)
         tabsSwiper = new Swiper(`.swiper-container`, {
             freeMode: true,
             slidesPerView: `auto`
         })
-    }
-
-    if ($(window).innerWidth() < 1024) {
-        // eslint-disable-next-line no-console
-        console.log(`Ширина страницы меньше 1024, инициализируем свайпер`)
-        initializeSwiper()
-    //     tabsSwiper.changeDirection(`horizontal`)
     } else {
-        // eslint-disable-next-line no-console
-        console.log(`десктоп, не инициализируем свайпер`)
-    //     tabsSwiper.changeDirection(`vertical`)
+        console.log(`Большая ширина, не инициализируем`)
+        tabsSwiper = undefined
     }
 
     $(window).resize(() => {
@@ -56,9 +48,6 @@ $(`#modalNotifications`).modal({
 $(`#modalUser`).modal({
     // show: false
 })
-// $(`#modalNotifications`).on(`shown.bs.modal`, function () {
-//     $(`.modal-backdrop`).addClass(`modal-backdrop--transparent`)
-// })
 
 $(`#modalUserMenu`).modal({
     show: false
