@@ -10,30 +10,17 @@ $(document).ready(() => {
 
     function disableSwiperOnDesktop() {
         if (window.matchMedia(`(min-width: 1024px)`).matches && tabsSwiper) {
-            console.log(`десктоп, свайпер есть, удаляем`)
             tabsSwiper.destroy()
             tabsSwiper = undefined
         } else if (!window.matchMedia(`(min-width: 1024px)`).matches && !tabsSwiper) {
-            console.log(`не десктоп, свайпера нет, создаем`)
             tabsSwiper = new Swiper(`.swiper-container`, {
                 freeMode: true,
                 slidesPerView: `auto`
             })
-        } else {
-            console.log(`состояние свайпера не нужно менять`)
         }
     }
 
-    if (!window.matchMedia(`(min-width: 1024px)`).matches) {
-        console.log(`маленькая ширина, инициализируем`)
-        tabsSwiper = new Swiper(`.swiper-container`, {
-            freeMode: true,
-            slidesPerView: `auto`
-        })
-    } else {
-        console.log(`Большая ширина, не инициализируем`)
-        tabsSwiper = undefined
-    }
+    disableSwiperOnDesktop()
 
     $(window).resize(() => {
         disableSwiperOnDesktop()
