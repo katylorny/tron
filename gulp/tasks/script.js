@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const plumber = require('gulp-plumber')
+const {SourceMapDevToolPlugin} = require('webpack')
 const webpack = require('webpack-stream')
 const CircularDependencyPlugin = require('circular-dependency-plugin')
 const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin")
@@ -12,6 +13,7 @@ module.exports = function script() {
     .pipe(eslint.format())
     .pipe(webpack({
       mode: process.env.NODE_ENV,
+      devtool:'eval-cheap-source-map',
       output: {
         filename: '[name].min.js',
       },
@@ -30,6 +32,7 @@ module.exports = function script() {
         ]
       },
       plugins: [
+        //new SourceMapDevToolPlugin(),
         new CircularDependencyPlugin(),
         new DuplicatePackageCheckerPlugin()
       ]

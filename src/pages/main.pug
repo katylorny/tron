@@ -6,46 +6,49 @@ block header
 block content
   main.main.container-lg
     .d-flex.ml-0.justify-content-between.content-wrapper
-      .sidebar.left-column
-        .sidebar__sections.rounded-lg
-          .d-flex.flex-column
-            h2.mb-0.border-bottom Разделы
-            ul.sidebar__sections-list.nav.border-0
-              li.sidebar__section.mb-2
-                a.text-info(href="#") Финансы
-                  span.sidebar__value 223
-              li.sidebar__section.mb-2
-                a.text-info(href="#") ПОЛО
-                  span.sidebar__value 223
-              li.sidebar__section.mb-2
-                a.text-info(href="#") ТРОН
-                  span.sidebar__value 223
-              li.sidebar__section.mb-2
-                a.text-info(href="#") Инвестиции
-                  span.sidebar__value 223
-              li.sidebar__section.mb-2
-                a.text-info(href="#") Мои темы
-                  span.sidebar__value 1
-              li.sidebar__all.pt-4
-                a.btn-underline(href="#") Все темы
-        .sidebar__info.rounded-lg
-          a.sidebar__section.text-info.mb-2(href="") Помощь
-          a.sidebar__section.text-info.mb-2(href="") Документы
-          ul.nav.mb-3
-            li
-              a.sidebar__social.sidebar__social--ok.text-hide(href="#")
-                img(src="img/icon-ok.svg" width="12" height="19")
-            li
-              a.sidebar__social.sidebar__social--youtube.text-hide(href="#")
-                img(src="img/icon-youtube.svg" width="28" height="19")
-            li
-              a.sidebar__social.sidebar__social--vk.text-hide(href="#")
-                img(src="img/icon-vk.svg" width="35" height="19")
-          span.sidebar__18 18+
+      .sidebar.left-column.swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            .sidebar__sections.rounded-lg
+              .d-flex.flex-column
+                h2.mb-0.border-bottom Разделы
+                ul.sidebar__sections-list.nav.border-0
+                  li.sidebar__section.mb-2
+                    a.text-info(href="#") Финансы
+                      span.sidebar__value 223
+                  li.sidebar__section.mb-2
+                    a.text-info(href="#") ПОЛО
+                      span.sidebar__value 223
+                  li.sidebar__section.mb-2
+                    a.text-info(href="#") ТРОН
+                      span.sidebar__value 223
+                  li.sidebar__section.mb-2
+                    a.text-info(href="#") Инвестиции
+                      span.sidebar__value 223
+                  li.sidebar__section.mb-2
+                    a.text-info(href="#") Мои темы
+                      span.sidebar__value 1
+                  li.sidebar__all.pt-4
+                    a.btn-underline(href="#") Все темы
+          .swiper-slide
+            .sidebar__info.rounded-lg
+              a.sidebar__section.text-info.mb-2(href="") Помощь
+              a.sidebar__section.text-info.mb-2(href="") Документы
+              ul.nav.mb-3
+                li
+                  a.sidebar__social.sidebar__social--ok.text-hide(href="#")
+                    img(src="img/icon-ok.svg" width="12" height="19")
+                li
+                  a.sidebar__social.sidebar__social--youtube.text-hide(href="#")
+                    img(src="img/icon-youtube.svg" width="28" height="19")
+                li
+                  a.sidebar__social.sidebar__social--vk.text-hide(href="#")
+                    img(src="img/icon-vk.svg" width="35" height="19")
+              span.sidebar__18 18+
 
-        .sidebar__subscription.bg-white.rounded-lg.nav.flex-column.px-3.mt-4.pt-2
-          p.text-danger Подписка заканчивается через 8 дней
-          a.btn-underline.d-block Продлить
+          .sidebar__subscription.bg-white.rounded-lg.nav.flex-column.px-3.mt-4.pt-2.swiper-slide
+            p.text-danger Подписка заканчивается через 8 дней
+            a.btn-underline.d-block Продлить
 
       .content.right-column
         ul.content__tabs.nav.nav-tabs.mr-3

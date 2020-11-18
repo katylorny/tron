@@ -4,18 +4,33 @@
     //box-shadow: 0px 10px 30px rgba(71, 71, 71, 0.1);
     min-height: calc(100vh - 135px);
     position: fixed;
+    display: flex;
+    flex-direction: column;
 
     @media (max-width: $desktop-width) {
         position: static;
         width: 100%;
         min-height: auto;
         display: flex;
+        flex-direction: row;
         margin: 0;
         overflow: hidden;
         //align-items: flex-end;
         a {
             white-space: nowrap;
         }
+    }
+
+    .swiper-wrapper {
+        flex-direction: column;
+
+        @media (max-width: $desktop-width) {
+            flex-direction: row;
+        }
+    }
+
+    .swiper-slide {
+        height: auto;
     }
 }
 

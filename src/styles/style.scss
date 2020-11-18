@@ -1,5 +1,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
+@import "node_modules/swiper/css/swiper";
+
 @import "utils/scrollbar";
 
 @import "utils/variables";
@@ -59,3 +61,7 @@
 @import "blocks/email-change";
 
 @import "blocks/modals";
+
+.swiper-slide {
+    width: auto !important;
+}

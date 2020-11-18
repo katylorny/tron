@@ -20,20 +20,23 @@
 }
 
 .header--no-search {
-  .header__search-input {
-    @media (max-width: $tablet-width) {
-      display: none;
+    .header__search-input {
+
+        @media (max-width: $tablet-width) {
+            display: none;
+        }
     }
-  }
 }
 
 
 .header--no-search + .main {
-  @media (max-width: $tablet-width) {
-    margin-top: 70px;
-    min-height: calc(100vh - 70px);
-  }
+
+    @media (max-width: $tablet-width) {
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
+    }
 }
+
 .header__nav {
 
     @media (max-width: $tablet-width) {
