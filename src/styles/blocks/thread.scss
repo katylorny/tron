@@ -192,6 +192,7 @@
 }
 
 .thread__messages {
+  margin-top: -4px;
 
     @media (max-width: $tablet-width) {
         width: 100%;
@@ -199,6 +200,10 @@
         flex-wrap: wrap;
         //flex-direction: column;
     }
+}
+
+.thread__complain {
+  margin-top: 1px;
 }
 
 .thread__new-messages-count {
@@ -240,6 +245,12 @@
     @media (max-width: $tablet-width) {
         order: 1;
     }
+}
+
+.thread__head {
+  h2 {
+    margin-top: 2px;
+  }
 }
 
 .thread__options-button {
