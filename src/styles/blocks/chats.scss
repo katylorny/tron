@@ -26,14 +26,15 @@
 
 
 .chats__link {
-    width: 55px;
-    height: 55px;
+    width: 57px;
+    height: 57px;
     flex-shrink: 0;
     margin-right: 10px;
+    border: 2px solid black;
 
     @media (max-width: $tablet-width) {
-        width: 26px;
-        height: 26px;
+        width: 28px;
+        height: 28px;
     }
 
     img {
