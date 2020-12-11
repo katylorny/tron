@@ -172,6 +172,7 @@
 }
 
 .sidebar__back-button {
+  width: fit-content;
 
     @media (max-width: $desktop-width) {
         margin-left: 20px;
