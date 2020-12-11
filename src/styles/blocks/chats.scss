@@ -47,6 +47,11 @@
 .chats__item {
     padding: 11px 5px 11px 24px;
     position: relative;
+    color: black;
+
+  &:hover {
+    color: black;
+  }
 
     img {
         width: 100%;
