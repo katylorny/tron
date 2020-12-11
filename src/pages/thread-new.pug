@@ -21,9 +21,9 @@ block content
         p.text-light-grey.mb-30 Чтобы вам было удобно читать, пожалуйста, уместите название в одну строку
         h2 Описание
         input#description.input-underline.w-100(type="text" placeholder="Введите описание")
-        p.text-light-grey Тут можно полностью описать вашу тему
-        h2 Выберите раздел
-        .btn-group.input-underline.p-0
+        p.text-light-grey.mb-30 Тут можно полностью описать вашу тему
+        h2.mb-10 Выберите раздел
+        .btn-group.input-underline.p-0.mb-30.mt-0
           button.thread-new__section.btn.p-0(type='button') Action
           button.btn.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
             span.sr-only Toggle Dropdown
@@ -33,7 +33,7 @@ block content
             a.dropdown-item(href='#') Something else here
             .dropdown-divider
             a.dropdown-item(href='#') Separated link
-        h2 Прикрепите файлы
+        h2.mb-10 Прикрепите файлы
         p.text-light-grey Можно прикрепить документы и фотографии
         .thread-new__files.d-flex
           input#file.sr-only(type="file" multiple)

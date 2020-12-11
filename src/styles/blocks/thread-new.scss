@@ -1,29 +1,50 @@
 .thread-new {
-    padding: 20px 156px 45px 115px;
+  //padding: 20px 156px 45px 115px;
+  padding: 20px 124px 45px 115px;
 
-    @media (max-width: $tablet-width) {
-        padding: 10px 22px 70px 23px;
-        margin-bottom: 20px;
+  @media (max-width: $tablet-width) {
+    padding: 10px 22px 70px 23px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    max-width: 100%;
+    padding-left: 0;
+    font-size: 18px;
+    font-family: $helvetica-neue;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    &::placeholder {
+      font-size: 18px;
+      color: #363636;
+      font-family: $helvetica-neue;
     }
+  }
 
-    input {
-        max-width: 100%;
-        padding-left: 0;
+  input:focus::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #053694;
+  }
 
-        &::placeholder {
-            font-size: 18px;
-            color: #363636;
-        }
-    }
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  h2.mb-10 {
+    margin-bottom: 10px;
+  }
 }
 
 .thread-new__section {
-    min-width: 194px;
-    text-align: left;
+  min-width: 194px;
+  text-align: left;
+  font-size: 18px;
 }
 
 .thread-new__send-button {
-    position: absolute;
-    right: 10px;
-    bottom: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
 }
