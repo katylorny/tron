@@ -48,10 +48,10 @@ $(`#modalNotPaid`).modal({})
 
 $(`#modalCheckData`).modal({})
 
-$(`.listing__wrapper`)[0] && new SimpleBar($(`.listing__wrapper`)[0])
-
-$(`.listing__alphabet-wrapper`)[0] && new SimpleBar($(`.listing__alphabet-wrapper`)[0])
-
-$(`.chat__wrapper`)[0] && new SimpleBar($(`.chat__wrapper`)[0])
-
-$(`.chats__wrapper`)[0] && new SimpleBar($(`.chats__wrapper`)[0])
+// $(`.listing__wrapper`)[0] && new SimpleBar($(`.listing__wrapper`)[0])
+//
+// $(`.listing__alphabet-wrapper`)[0] && new SimpleBar($(`.listing__alphabet-wrapper`)[0])
+//
+// $(`.chat__wrapper`)[0] && new SimpleBar($(`.chat__wrapper`)[0])
+//
+// $(`.chats__wrapper`)[0] && new SimpleBar($(`.chats__wrapper`)[0])

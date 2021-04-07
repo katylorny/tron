@@ -151,3 +151,19 @@
   top: 39px;
   z-index: 2;
 }
+
+
+.header-left {
+  padding-top: 20px;
+  @media (max-width: 779px) {
+    padding-top: 15px;
+    padding-left: 21px;
+  }
+
+
+  img {
+    @media (max-width: 779px) {
+      width: 100px;
+    }
+  }
+}
