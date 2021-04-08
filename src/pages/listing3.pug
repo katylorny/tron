@@ -23,12 +23,17 @@ block content
         button.v2-listing__city-filter
           span Город
           img(src="img/icon-dropdown-tick.svg" width='9' height='5')
+        button.v2-listing__filter-off Сбросить фильтрацию
 
         .v2-listing__filter-content
+          button.v2-listing__close-filters
+            img(src="img/x-icon.svg" width='15' height='15')
           ul.list-unstyled.mb-0
-            li По городам
-            li По именам
-            button.v2-listing__filter-off Сбросить фильтрацию
+            li
+              a(href="#") По городам
+            li
+              a(href="#") По именам
+          button.v2-listing__filter-off Сбросить фильтр
 
     .listing.v2-listing.d-flex.position-relative.mx-auto.rounded
       .listing__content.d-flex.flex-column.v2-listing__content
